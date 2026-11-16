@@ -47,7 +47,8 @@ Edit or add a file in `content/songs/`, run `npm run content`, and open a pull r
 ## What's in the app (Phase 1)
 
 - **Circle:** moment tiles in DeMon running order, plus a search shortcut.
-- **Songs:** search titles and any lyric line, typos welcome ("swnig lo" finds Swing Low); filter by moment, rating, length, difficulty and style.
+- **Songs:** search titles and any lyric line, typos welcome ("swnig lo" finds Swing Low); filter by moment, rating, size, difficulty and style.
+- **Song cards:** just the title and a colour-coded S / M / L / XL size badge (S up to 6 sung lines, M up to 16, L up to 32, XL beyond). Tune, hook and difficulty live on the song screen.
 - **Song screen:** structured lyrics (chorus band, leader/all parts, verse numbers), A− / A+ text size, share as text with an `h5://song/<id>` link, tap a moment chip for more songs like it, screen stays awake.
 - **Circle mode:** full-screen huge lyrics; tap the screen (or the arrows) to move a verse at a time, tap the top strip to go back.
 - **Saved:** your songs in circle order, with reorder and remove. Saving tips a beer mug (skipped with Reduce Motion).

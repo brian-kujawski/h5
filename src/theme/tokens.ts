@@ -15,6 +15,10 @@ export const palette = {
     onOn: '#2E6B3F',
     checkBack: '#B3261E',
     divider: '#E8DCCB',
+    sizeS: '#2E6B3F',
+    sizeM: '#1F5F99',
+    sizeL: '#A84E00',
+    sizeXL: '#B3261E',
   },
   dark: {
     background: '#16130F',
@@ -27,6 +31,10 @@ export const palette = {
     onOn: '#7BC98F',
     checkBack: '#FF8A80',
     divider: '#3A332B',
+    sizeS: '#7BC98F',
+    sizeM: '#8FC1F2',
+    sizeL: '#FFB547',
+    sizeXL: '#FF8A80',
   },
 } as const;
 

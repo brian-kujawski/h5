@@ -14,10 +14,12 @@ import {
   findSongs,
   moments,
   NO_FILTERS,
+  SIZE_NAMES,
+  SIZES,
   type SongFilters,
   stylesInUse,
 } from '@/content/songbook';
-import { DIFFICULTIES, LENGTHS, RATINGS } from '@/content/types';
+import { DIFFICULTIES, RATINGS } from '@/content/types';
 import { useSettings } from '@/lib/settings';
 import { radius, space, TAP, type as typeScale } from '@/theme/tokens';
 
@@ -168,7 +170,13 @@ export default function SongsScreen() {
             onToggle={toggleIn('ratings')}
             footnote={settings.cleanMode ? 'Clean mode hides explicit songs. Switch it off in More.' : undefined}
           />
-          <FilterGroup title="Length" values={LENGTHS} selected={filters.lengths} onToggle={toggleIn('lengths')} />
+          <FilterGroup
+            title="Size"
+            values={SIZES}
+            selected={filters.sizes}
+            onToggle={toggleIn('sizes')}
+            labelFor={(s) => `${s} · ${SIZE_NAMES[s]}`}
+          />
           <FilterGroup
             title="Difficulty"
             values={DIFFICULTIES}

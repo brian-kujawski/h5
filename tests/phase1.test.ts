@@ -11,6 +11,7 @@ import {
   NO_FILTERS,
   searchSongs,
   songs,
+  songSize,
   songsForMoment,
 } from '../src/content/songbook';
 import { LYRIC_SCALES, nextStop, stepScale } from '../src/lib/circle';
@@ -40,16 +41,16 @@ describe('typo-tolerant search', () => {
 describe('filters', () => {
   it('counts active filters', () => {
     assert.equal(activeFilterCount(NO_FILTERS), 0);
-    assert.equal(activeFilterCount({ ...NO_FILTERS, lengths: ['quick'], hasRecording: true }), 2);
+    assert.equal(activeFilterCount({ ...NO_FILTERS, sizes: ['S'], hasRecording: true }), 2);
   });
   it('with no filters returns every visible song', () => {
     assert.equal(findSongs('', NO_FILTERS, false).length, songs.length);
   });
   it('ORs within a category and ANDs across categories', () => {
-    const quickOrEpic = findSongs('', { ...NO_FILTERS, lengths: ['quick', 'epic'] }, false);
-    assert.ok(quickOrEpic.every((s) => s.length === 'quick' || s.length === 'epic'));
-    const quickEasy = findSongs('', { ...NO_FILTERS, lengths: ['quick'], difficulties: ['easy'] }, false);
-    assert.ok(quickEasy.every((s) => s.length === 'quick' && s.difficulty === 'easy'));
+    const quickOrEpic = findSongs('', { ...NO_FILTERS, sizes: ['S', 'XL'] }, false);
+    assert.ok(quickOrEpic.every((s) => songSize(s) === 'S' || songSize(s) === 'XL'));
+    const quickEasy = findSongs('', { ...NO_FILTERS, sizes: ['S'], difficulties: ['easy'] }, false);
+    assert.ok(quickEasy.every((s) => songSize(s) === 'S' && s.difficulty === 'easy'));
     assert.ok(quickEasy.length <= quickOrEpic.length);
   });
   it('filters by moment the same way the Circle tiles do', () => {
@@ -65,6 +66,17 @@ describe('filters', () => {
   it('has-recording filter only keeps songs with recordings', () => {
     const r = findSongs('', { ...NO_FILTERS, hasRecording: true }, false);
     assert.ok(r.every((s) => s.recordings.length > 0));
+  });
+});
+
+describe('size badge', () => {
+  it('buckets songs by sung lines into S, M, L and XL', () => {
+    const one = (n: number) => ({ ...songs[0], sections: [{ type: 'verse' as const, number: 1, lines: Array.from({ length: n }, () => ({ segments: [] })) }] });
+    assert.deepEqual([1, 6, 7, 16, 17, 32, 33, 60].map((n) => songSize(one(n))), ['S', 'S', 'M', 'M', 'L', 'L', 'XL', 'XL']);
+  });
+  it('ignores performance notes', () => {
+    const song = { ...songs[0], sections: [{ type: 'note' as const, lines: Array.from({ length: 50 }, () => ({ segments: [] })) }] };
+    assert.equal(songSize(song), 'S');
   });
 });
 

@@ -25,6 +25,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { EmptyState } from '@/components/empty-state';
 import { Lyrics } from '@/components/lyrics';
 import { MugTip } from '@/components/mug-tip';
+import { SizeBadge } from '@/components/size-badge';
 import { Text } from '@/components/text';
 import { shareText } from '@/content/share';
 import { getMoment, getSong } from '@/content/songbook';
@@ -56,12 +57,15 @@ function Chip({ label, onPress }: { label: string; onPress?: () => void }) {
 }
 
 function SongMeta({ song }: { song: Song }) {
-  const facts = [song.length, song.difficulty, ...song.style.map((s) => s.replace(/-/g, ' '))];
+  const facts = [song.difficulty, ...song.style.map((s) => s.replace(/-/g, ' '))];
   return (
     <View style={{ gap: space.sm }}>
-      <Text variant="display" accessibilityRole="header">
-        {song.title}
-      </Text>
+      <View style={styles.titleRow}>
+        <Text variant="display" accessibilityRole="header" style={styles.fill}>
+          {song.title}
+        </Text>
+        <SizeBadge song={song} />
+      </View>
       {song.alt_titles.length ? (
         <Text variant="secondary" color="textSecondary">
           Also known as {song.alt_titles.join(', ')}
@@ -314,6 +318,7 @@ export default function SongScreen() {
 const styles = StyleSheet.create({
   fill: { flex: 1 },
   content: { padding: space.md, paddingBottom: space.xxl, gap: space.lg, maxWidth: 720, width: '100%', alignSelf: 'center' },
+  titleRow: { flexDirection: 'row', alignItems: 'flex-start', gap: space.sm },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: space.xs + 2 },
   chip: { borderWidth: 1, borderRadius: radius.chip, paddingHorizontal: space.sm + 2, paddingVertical: space.xs },
   flag: { borderWidth: 1, borderRadius: radius.card, padding: space.sm },

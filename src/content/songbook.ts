@@ -8,7 +8,7 @@
  * internals for SQLite FTS behind these same function shapes.
  */
 import data from './generated/songbook.json';
-import type { Difficulty, Length, Moment, Rating, Song, Songbook, Style } from './types';
+import type { Difficulty, Moment, Rating, Song, Songbook, Style } from './types';
 
 const songbook = data as unknown as Songbook;
 
@@ -141,11 +141,28 @@ export function searchSongs(query: string, cleanMode: boolean, pool: Song[] = so
 
 const byTitle = (a: Song, b: Song) => a.title.localeCompare(b.title);
 
+/**
+ * How big a song is at a glance, from how many lines get sung (repeated choruses count):
+ * S up to 6 lines (a chant or down-down), M up to 16, L up to 32, XL beyond.
+ */
+export const SIZES = ['S', 'M', 'L', 'XL'] as const;
+export type Size = (typeof SIZES)[number];
+
+export const SIZE_NAMES: Record<Size, string> = { S: 'Short', M: 'Medium', L: 'Long', XL: 'Extra long' };
+
+export const sungLines = (song: Song) =>
+  song.sections.filter((s) => s.type !== 'note').reduce((n, s) => n + s.lines.length, 0);
+
+export function songSize(song: Song): Size {
+  const n = sungLines(song);
+  return n <= 6 ? 'S' : n <= 16 ? 'M' : n <= 32 ? 'L' : 'XL';
+}
+
 /** Songs tab filters. An empty list means "any". */
 export type SongFilters = {
   moments: string[];
   ratings: Rating[];
-  lengths: Length[];
+  sizes: Size[];
   styles: Style[];
   difficulties: Difficulty[];
   hasRecording: boolean;
@@ -154,14 +171,14 @@ export type SongFilters = {
 export const NO_FILTERS: SongFilters = {
   moments: [],
   ratings: [],
-  lengths: [],
+  sizes: [],
   styles: [],
   difficulties: [],
   hasRecording: false,
 };
 
 export const activeFilterCount = (f: SongFilters) =>
-  f.moments.length + f.ratings.length + f.lengths.length + f.styles.length + f.difficulties.length + (f.hasRecording ? 1 : 0);
+  f.moments.length + f.ratings.length + f.sizes.length + f.styles.length + f.difficulties.length + (f.hasRecording ? 1 : 0);
 
 /** True when the song fits a moment directly or through that moment's `includes`, same as the Circle tiles. */
 export function fitsMoment(song: Song, momentId: string): boolean {
@@ -174,7 +191,7 @@ export function matchesFilters(song: Song, f: SongFilters): boolean {
   return (
     (f.moments.length === 0 || f.moments.some((m) => fitsMoment(song, m))) &&
     (f.ratings.length === 0 || f.ratings.includes(song.rating)) &&
-    (f.lengths.length === 0 || f.lengths.includes(song.length)) &&
+    (f.sizes.length === 0 || f.sizes.includes(songSize(song))) &&
     (f.styles.length === 0 || f.styles.some((s) => song.style.includes(s))) &&
     (f.difficulties.length === 0 || f.difficulties.includes(song.difficulty)) &&
     (!f.hasRecording || song.recordings.length > 0)
