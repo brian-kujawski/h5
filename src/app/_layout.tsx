@@ -47,6 +47,7 @@ function AppShell() {
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="moment/[id]" options={{ title: '' }} />
           <Stack.Screen name="song/[id]" options={{ title: '' }} />
+          <Stack.Screen name="ra-pick/[step]" options={{ title: '', presentation: 'modal', headerShown: false }} />
         </Stack>
         {settings.ageConfirmed ? null : (
           <View style={StyleSheet.absoluteFill}>
