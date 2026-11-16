@@ -14,6 +14,23 @@ That validates every file and rebuilds `src/content/generated/songbook.json`, wh
 
 79 songs from the Motown Ann Arbor H3 Hymnal PDF (rev. 20 April 2009), plus "Here's to Fellow Hashers" from the DeMon H3 RA cheat sheet. The default bundled list is the songs sung at MoA2H3 and DeMonH3, and it will change over time.
 
+## The November 2026 import
+
+323 more songs came from three hymnals scavenged from other kennels:
+
+- 306 from Flying Booger's Hash Hymns III (Summit H3 songbook, January 1994).
+- 4 from the Ibaraki H3 Hash Hymnal.
+- 13 from the Memphis H3 Hash Hymnal (memphish3.com). Most of its other songs were already in the songbook.
+
+Songs that were misogynist, racist, ableist, homophobic or transphobic were left out, along with any that sexualise children or are built around rape. A few otherwise-fine songs had single verses removed. Bestiality, incest and necrophilia songs are on hold for the kennel to decide. [import-review-2026-11.md](import-review-2026-11.md) lists every exclusion, hold, duplicate and flag, with the reasons.
+
+How the imported songs were tagged:
+
+- **Rating:** none of them is rated `clean`. Each one is either `explicit` (it contains a sexual word) or `cheeky`, so clean mode hides them all until a songmeister promotes the genuinely clean ones.
+- **Moments:** most are tagged `any-time`.
+- **Hooks:** all are `null`.
+- **Stanzas:** the Summit text lost its stanza breaks, so verses were re-split into 4-line blocks. Some will be split in the wrong place.
+
 **All metadata is provisional.** Moments, ratings, length, difficulty and hooks are rough placeholders to show the format. Real values come from hashers. Every file says `metadata_status: provisional` until someone reviews it.
 
 ## File format
@@ -66,6 +83,7 @@ These came up during the import. Toledo Down-Down, Yogi Bear and Twenty Toes wer
 - **Swing Low** was rebuilt from a gesture grid; check the word-to-gesture pairing.
 - Two songs were both titled "Alternate Birthday Song"; they're now "May You Live 100 Years" and "Here's to (Name) Birthday Song".
 - 21 songs have no hook yet (`hook: null`); lists show the first line instead.
+- Imported songs flagged `verses-left-out`, `check-content`, `stereotypes`, `copyright`, `names-a-person`, `kennel-specific` or `bestiality` show a KENNEL REVIEW line until someone clears the flag. The song's `notes` say why.
 - Lyrics are otherwise kept as written (including original spellings), with page headers and footers removed.
 
 ## Ideas the songbook surfaced for later phases

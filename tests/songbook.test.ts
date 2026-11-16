@@ -59,7 +59,12 @@ describe('songsForMoment', () => {
   it('puts songs made for the moment first', () => {
     const list = songsForMoment('hares', false);
     assert.ok(list.length > 0);
-    for (let i = 1; i < list.length; i++) assert.ok(list[i - 1].moments.length <= list[i].moments.length);
+    // Within each tier (tagged directly, then via an included moment), single-purpose songs come first.
+    const direct = (s: (typeof list)[number]) => s.moments.includes('hares');
+    for (let i = 1; i < list.length; i++) {
+      if (direct(list[i - 1]) !== direct(list[i])) continue;
+      assert.ok(list[i - 1].moments.length <= list[i].moments.length);
+    }
   });
   it('resolves songs by id', () => {
     assert.equal(getSong('hare-toast')?.title, 'Hare Toast');

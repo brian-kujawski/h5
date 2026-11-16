@@ -1,0 +1,63 @@
+---
+id: nancy-brown
+title: "Nancy Brown"
+tune: null
+hook: null
+moments: [any-time]
+style: [sing-along]
+rating: explicit
+length: epic
+difficulty: medium
+pronoun_variants: false
+fill_in: []
+ends_with_down_down: false
+review_flags: [check-content]
+origin: "Flying Booger's Hash Hymns III (Summit H3 songbook, Jan 1994)"
+source_title: "NANCY BROWN"
+notes: "Review: Borderline: slut-shaming arc."
+recordings: []
+metadata_status: provisional
+---
+
+[verse]
+Way out in West Virginia lived a gal named Nancy Brown,
+You ain't never seen such beauty in a city nor a town,
+Oh she lived up in the mountain,
+Yes she lived up in the mountain,
+Oh she lived up in the mountain mighty high.
+And so it is related, not a bit contaminated,
+She was as pure as the West Virginia sky.
+Now there came the local cowboy with his guitar and his song,
+He took Nancy to the mountain but she still knew right from wrong,
+She came rollin' down the mountain,
+She came rollin' down the mountain,
+She came rollin' down the mountain mighty fine.
+And despite that cowboy's urgin' she remained the village virgin,
+She was as pure as the West Virginia sky.
+Then there came the village deacon with his phrases sweet and kind,
+He took Nancy to the mountain but she still could read his mind,
+She came rollin' down the mountain,
+She came rollin' down the mountain,
+She came rollin' down the mountain mighty fine.
+And they say that that there deacon didn't get what he was seekin',
+She was as pure as the West Virginia sky.
+But there came the city slicker with his thousand dollar bills,
+He put Nancy in his Packard and drove up in them thar hills,
+Oh they stayed up on the mountain,
+She was laid upon the mountain,
+Oh they stayed up on the mountain all that night.
+She came down next mornin' early more a woman than a girl,
+And her mother kicked the hussy out of sight.
+Slow: Now the end of our ditty finds Nancy in the city,
+And by all accounts she's doin' mighty swell,
+For she's winin',
+And she's dinin',
+And she's on her back reclinin',
+And those West Virginia skies can go to hell.
+Normal tempo: But there came the big Depression, caught our slicker by the pants,
+He had to sell his Packard and give up his little Nance,
+So she went back to the mountain,
+Yes she went back to the mountain,
+Oh she went back to the mountain mighty sore.
+Now the cowboy and the deacon get the thing that they were seekin',
+For she's nothing but a West Virginia whore.
