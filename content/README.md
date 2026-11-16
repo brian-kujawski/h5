@@ -16,11 +16,11 @@ That validates every file and rebuilds `src/content/generated/songbook.json`, wh
 
 ## The November 2026 import
 
-310 more songs came from three hymnals scavenged from other kennels:
+323 more songs came from three hymnals scavenged from other kennels:
 
 - 306 from Flying Booger's Hash Hymns III (Summit H3 songbook, January 1994).
 - 4 from the Ibaraki H3 Hash Hymnal.
-- None from the Memphis H3 hymnal yet, because only its title index came through.
+- 13 from the Memphis H3 Hash Hymnal (memphish3.com). Most of its other songs were already in the songbook.
 
 Songs that were misogynist, racist, ableist, homophobic or transphobic were left out, along with any that sexualise children or are built around rape. A few otherwise-fine songs had single verses removed. Bestiality, incest and necrophilia songs are on hold for the kennel to decide. [import-review-2026-11.md](import-review-2026-11.md) lists every exclusion, hold, duplicate and flag, with the reasons.
 

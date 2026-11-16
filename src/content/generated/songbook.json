@@ -10229,6 +10229,269 @@
       "first_line": "There she stood beside the bar rail,"
     },
     {
+      "id": "clint-meets-the-gay-caballero",
+      "title": "Clint Meets the Gay Caballero",
+      "alt_titles": [],
+      "tune": null,
+      "hook": null,
+      "moments": [
+        "any-time"
+      ],
+      "style": [
+        "sing-along"
+      ],
+      "rating": "explicit",
+      "length": "standard",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": false,
+      "review_flags": [
+        "check-content"
+      ],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "Clint Meets the Gay Caballero",
+      "notes": "An original song by King Rongjon (Memphis H3). Review: the punchline is the Gay Caballero leaving Clint \"sucked dry\"; decide whether it reads as gay panic.",
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Oh, Clint was a cowboy, he rode on the range"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "When he came into town he would sing this refrain"
+                }
+              ]
+            }
+          ],
+          "number": 1
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Key yai yai, yippie yai yai, key yai yai yippie ay"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "I'll gladly pay Tuesday for a blowjob today"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "On Clint at the whorehouse the door was slammed shut"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "His credit not good for a worm eaten slut"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Key yai yai, yippie yai yai, key yai yai yippie ay"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "You cannot pay Tuesday for a blowjob today"
+                }
+              ]
+            }
+          ],
+          "number": 2
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "So, into his saddle Clint dejectedly sank"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "He sat on his horse and he started to wank"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Key yai yai, yippie yai yai, key yai yai yippie ay"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "I cannot pay Tuesday for a blowjob today"
+                }
+              ]
+            }
+          ],
+          "number": 3
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "The Gay Caballero, his name was Latrell"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Rode in with a song that made Clint's member swell"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Key yai yai, yippie yai yai, key yai yai yippie ay"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "You can pay me on Tuesday for a blowjob today"
+                }
+              ]
+            }
+          ],
+          "number": 4
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "For the Gay Caballero ol' Clint was no match"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "They found him sucked dry in a tumbleweed patch"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Key yai yai, yippie yai yai, key yai yai yippie ay"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Well the Gay Caballero won't get paid Tuesday"
+                }
+              ]
+            }
+          ],
+          "number": 5
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "The moral is clear if you're looking for it"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "A blowjob on credit is worthless as shit"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Key yai yai, yippie yai yai, key yai yai yippie ay"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "That's Clint meets the Gay Caballero, Ole!"
+                }
+              ]
+            }
+          ],
+          "number": 6
+        }
+      ],
+      "first_line": "Oh, Clint was a cowboy, he rode on the range"
+    },
+    {
       "id": "cock-robin",
       "title": "Cock Robin",
       "alt_titles": [],
@@ -14310,6 +14573,138 @@
       "first_line": "Dinah, Dinah, show us your leg,"
     },
     {
+      "id": "dinah-wont-you-blow-me",
+      "title": "Dinah, Won't You Blow Me?",
+      "alt_titles": [],
+      "tune": "I've Been Working on the Railroad",
+      "hook": null,
+      "moments": [
+        "any-time"
+      ],
+      "style": [
+        "sing-along"
+      ],
+      "rating": "explicit",
+      "length": "quick",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": false,
+      "review_flags": [],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "Dinah, Won't You Blow Me?",
+      "notes": null,
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Dinah, won't you blow me"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Dinah, won't you blow me"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Dinah, won't you blow my hooorrr-orn?"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Dinah, won't you blow me"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Dinah, won't you blow me"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Dinah, won't you blow my horn?"
+                }
+              ]
+            }
+          ],
+          "number": 1
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Someone's in my sister's vagina"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Someone's in my sister I knooo-oowww"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Someone's in my sister's vagiiii-naah"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Blowing like a dynamo"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "And going *blblblblblblb* "
+                },
+                {
+                  "kind": "note",
+                  "text": "mouth noise"
+                }
+              ]
+            }
+          ],
+          "number": 2
+        }
+      ],
+      "first_line": "Dinah, won't you blow me"
+    },
+    {
       "id": "divorce-game",
       "title": "Divorce Game",
       "alt_titles": [],
@@ -16843,6 +17238,163 @@
       "first_line": "Fuck a duck,"
     },
     {
+      "id": "fuck-off",
+      "title": "Fuck Off",
+      "alt_titles": [],
+      "tune": "Auld Lang Syne",
+      "hook": null,
+      "moments": [
+        "roast",
+        "stalling"
+      ],
+      "style": [
+        "sing-along"
+      ],
+      "rating": "explicit",
+      "length": "standard",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": false,
+      "review_flags": [],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "Fuck Off",
+      "notes": null,
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off, fuck off"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off, fuck off"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off, fuck off, fuck off"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off, fuck off"
+                }
+              ]
+            }
+          ],
+          "number": 1
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off, fuck off"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off, fuck off, fuck off"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off, fuck off"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off, fuck off"
+                }
+              ]
+            }
+          ],
+          "number": 2
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off, fuck off, fuck off"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off fuck off"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off, fuck off"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off, fuck off"
+                }
+              ]
+            }
+          ],
+          "number": 3
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck off, fuck off, fuck off"
+                }
+              ]
+            }
+          ],
+          "number": 4
+        }
+      ],
+      "first_line": "Fuck off, fuck off"
+    },
+    {
       "id": "furburger-king",
       "title": "Furburger King",
       "alt_titles": [],
@@ -17466,6 +18018,112 @@
         }
       ],
       "first_line": "Oh, give me a clone"
+    },
+    {
+      "id": "give-me-an-a",
+      "title": "Give Me an A!",
+      "alt_titles": [],
+      "tune": null,
+      "hook": null,
+      "moments": [
+        "any-time"
+      ],
+      "style": [
+        "call-and-response"
+      ],
+      "rating": "cheeky",
+      "length": "quick",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": false,
+      "review_flags": [],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "Give Me an A!",
+      "notes": null,
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "part": "leader",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Give me an A!"
+                }
+              ]
+            },
+            {
+              "part": "all",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "A!"
+                }
+              ]
+            },
+            {
+              "part": "leader",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Give me an A!"
+                }
+              ]
+            },
+            {
+              "part": "all",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "A!"
+                }
+              ]
+            },
+            {
+              "part": "leader",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Give me another A!"
+                }
+              ]
+            },
+            {
+              "part": "all",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "A!"
+                }
+              ]
+            },
+            {
+              "part": "leader",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "What's it spell?"
+                }
+              ]
+            },
+            {
+              "part": "all",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Aaaaahhhhhhh."
+                }
+              ]
+            }
+          ],
+          "number": 1
+        }
+      ],
+      "first_line": "Give me an A!"
     },
     {
       "id": "give-me-operations",
@@ -35357,6 +36015,141 @@
       "first_line": "Miss Jones was walking down the street,"
     },
     {
+      "id": "last-night",
+      "title": "Last Night",
+      "alt_titles": [],
+      "tune": "Funiculì, Funiculà",
+      "hook": null,
+      "moments": [
+        "any-time"
+      ],
+      "style": [
+        "sing-along"
+      ],
+      "rating": "explicit",
+      "length": "standard",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": false,
+      "review_flags": [],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "Last Night",
+      "notes": null,
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Last night, I laid in bed and masturbated"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "It felt so good, I knew it would"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Last night, I laid in bed and masturbated"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "It felt so nice, I did it twice"
+                }
+              ]
+            }
+          ],
+          "number": 1
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Ohhhhh would you like to see me on my short stroke"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "It felt so grand, I used my hand"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Ohhhhh would you like to see me on my long stroke"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "It felt so neat, I used my feet"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Smash it bash it bang it on the floor"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Wrap it 'round the bedpost and fling it out the door"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Some people think that sexual intercourse is something really graaaaaaaaand"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Me, I'd rather sit at home and work one out by hand"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "first_line": "Last night, I laid in bed and masturbated"
+    },
+    {
       "id": "leavers-song",
       "title": "Leaver's Song",
       "alt_titles": [],
@@ -44969,6 +45762,72 @@
         }
       ],
       "first_line": "I am the music man and I come from"
+    },
+    {
+      "id": "my-asshole-is-sore",
+      "title": "My Asshole Is Sore",
+      "alt_titles": [],
+      "tune": "My Bonnie Lies Over the Ocean",
+      "hook": null,
+      "moments": [
+        "any-time"
+      ],
+      "style": [
+        "sing-along"
+      ],
+      "rating": "explicit",
+      "length": "quick",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": false,
+      "review_flags": [],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "My Asshole is Sore",
+      "notes": null,
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "My asshole is sore from your fucking"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "My asshole is sore from your dick"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "My asshole is sore from your stuffing"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "So give it a rest, you prick"
+                }
+              ]
+            }
+          ],
+          "number": 1
+        }
+      ],
+      "first_line": "My asshole is sore from your fucking"
     },
     {
       "id": "my-big-banana",
@@ -57916,6 +58775,105 @@
       "first_line": "Sexiatus mania,"
     },
     {
+      "id": "shes-a-little-sexpot",
+      "title": "She's a Little Sexpot",
+      "alt_titles": [],
+      "tune": "I'm a Little Teapot",
+      "hook": null,
+      "moments": [
+        "any-time"
+      ],
+      "style": [
+        "sing-along",
+        "actions"
+      ],
+      "rating": "explicit",
+      "length": "quick",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": false,
+      "review_flags": [],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "She's a Little Sexpot",
+      "notes": "Harriette counterpart to I'm a Little Hasher.",
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "She's a little sexpot"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Short and squat"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Here are her handles"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Here is her twat"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "When she gets all filled up"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Hear her shout"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "\"Bend me over"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "And eat me out!\""
+                }
+              ]
+            }
+          ],
+          "number": 1
+        }
+      ],
+      "first_line": "She's a little sexpot"
+    },
+    {
       "id": "most-immoral-lady",
       "title": "She's a Most Immoral Lady",
       "alt_titles": [],
@@ -59986,6 +60944,81 @@
         }
       ],
       "first_line": "You run sixteen miles, and what do you get?"
+    },
+    {
+      "id": "skeeter-on-my-peter",
+      "title": "Skeeter on My Peter",
+      "alt_titles": [],
+      "tune": "If You're Happy and You Know It",
+      "hook": null,
+      "moments": [
+        "trail-mishap",
+        "any-time"
+      ],
+      "style": [
+        "sing-along"
+      ],
+      "rating": "explicit",
+      "length": "quick",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": false,
+      "review_flags": [],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "Skeeter on My Peter",
+      "notes": null,
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "There's a skeeter on my peter, whack it off"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "There's a skeeter on my peter, whack it off"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "There's a dozen on my cousin"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "I can hear those fuckers buzzin'"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "There's a skeeter on my peter, whack it off"
+                }
+              ]
+            }
+          ],
+          "number": 1
+        }
+      ],
+      "first_line": "There's a skeeter on my peter, whack it off"
     },
     {
       "id": "skippy-the-squirrel",
@@ -65706,6 +66739,75 @@
       "first_line": "Ten sticks of dynamite hanging on the wall,"
     },
     {
+      "id": "thank-god-you-finally-shut-up",
+      "title": "Thank God You Finally Shut Up",
+      "alt_titles": [],
+      "tune": null,
+      "hook": null,
+      "moments": [
+        "roast",
+        "stalling"
+      ],
+      "style": [
+        "sing-along"
+      ],
+      "rating": "explicit",
+      "length": "quick",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": false,
+      "review_flags": [
+        "verses-left-out"
+      ],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "Thank God You Finally Shut Up",
+      "notes": "Review: male version only. The source's female version (\"get back in the kitchen\") was left out as misogynist; a kennel could write a non-sexist one.",
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Thank God you finally shut up"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "You sorry son of a bitch"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "So drink your beer, get out of here"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "You make my asshole itch"
+                }
+              ]
+            }
+          ],
+          "number": 1
+        }
+      ],
+      "first_line": "Thank God you finally shut up"
+    },
+    {
       "id": "ball-of-kerrymuir",
       "title": "The Ball of Kerrymuir",
       "alt_titles": [],
@@ -70478,6 +71580,85 @@
         }
       ],
       "first_line": "Oh, I am a gay caballero,"
+    },
+    {
+      "id": "hash-house-quartet",
+      "title": "The Hash House Quartet",
+      "alt_titles": [],
+      "tune": null,
+      "hook": null,
+      "moments": [
+        "any-time"
+      ],
+      "style": [
+        "call-and-response"
+      ],
+      "rating": "explicit",
+      "length": "quick",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": false,
+      "review_flags": [],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "The Hash House Quartet",
+      "notes": "Sung by the Hash House Quartet.",
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "part": "leader",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Have you got a hard-on?"
+                }
+              ]
+            },
+            {
+              "part": "all",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Not yet!"
+                }
+              ]
+            },
+            {
+              "part": "leader",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Are you gonna get one?"
+                }
+              ]
+            },
+            {
+              "part": "all",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "You bet!"
+                }
+              ]
+            },
+            {
+              "part": "leader",
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "So suck me off"
+                }
+              ]
+            }
+          ],
+          "number": 1
+        }
+      ],
+      "first_line": "Have you got a hard-on?"
     },
     {
       "id": "history-of-beer",
@@ -83452,6 +84633,197 @@
       "first_line": "If I give you half-a-crown,"
     },
     {
+      "id": "with-an-f",
+      "title": "With an F, With an F, With an F-U-C",
+      "alt_titles": [],
+      "tune": "William Tell Overture",
+      "hook": null,
+      "moments": [
+        "any-down-down"
+      ],
+      "style": [
+        "sing-along",
+        "down-down"
+      ],
+      "rating": "explicit",
+      "length": "standard",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": true,
+      "review_flags": [],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "With an F, With an F, With an F-U-C",
+      "notes": null,
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "With an F, with an F"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "With an F-U-C"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "With an F-U-C-K-Y-O-U"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "With an F, with an F"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "With an F-U-C"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "And a K, and a Y-O-U"
+                }
+              ]
+            }
+          ],
+          "number": 1
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck you, fuck you, fuck you, fuck you"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck you in the morning"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck you, fuck you, fuck you, fuck you"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Fuck you late at night!"
+                }
+              ]
+            }
+          ],
+          "number": 2
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "With an F, with an F"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "With an F-U-C"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "With an F-U-C-K-Y-O-U"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "With an F, with an F"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "With an F-U-C"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "And a K, and a Y-O-U"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Drink it down down down down..."
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "note",
+                  "text": "Sung to the same tune as the song"
+                }
+              ]
+            }
+          ],
+          "number": 3
+        }
+      ],
+      "first_line": "With an F, with an F"
+    },
+    {
       "id": "woodpecker-song",
       "title": "Woodpecker Song",
       "alt_titles": [],
@@ -83645,6 +85017,97 @@
         }
       ],
       "first_line": "I put my finger in the woodpecker's hole,"
+    },
+    {
+      "id": "would-you-like-a-finger",
+      "title": "Would You Like a Finger?",
+      "alt_titles": [],
+      "tune": "Hava Nagila",
+      "hook": null,
+      "moments": [
+        "any-down-down"
+      ],
+      "style": [
+        "sing-along",
+        "actions"
+      ],
+      "rating": "explicit",
+      "length": "quick",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": true,
+      "review_flags": [],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "Would You Like a Finger?",
+      "notes": "From \"No sir, not fucking likely\" the tune changes to Hava Nagila.",
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Oh would -- you like -- a finger in your ear"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Or would -- you like -- a finger in your rear"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "note",
+                  "text": "Beer held over head, twirling"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "No sir, not fucking likely"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Not fucking likely"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Don't fucking think so"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "So drink it down down down down..."
+                }
+              ]
+            }
+          ],
+          "number": 1
+        }
+      ],
+      "first_line": "Oh would -- you like -- a finger in your ear"
     },
     {
       "id": "yankee-air-pirate",
@@ -85044,6 +86507,206 @@
         }
       ],
       "first_line": "Yesterday,"
+    },
+    {
+      "id": "yo-ho",
+      "title": "Yo Ho",
+      "alt_titles": [],
+      "tune": "When Johnny Comes Marching Home",
+      "hook": null,
+      "moments": [
+        "any-time"
+      ],
+      "style": [
+        "sing-along",
+        "call-and-response"
+      ],
+      "rating": "explicit",
+      "length": "standard",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": false,
+      "review_flags": [
+        "verses-left-out"
+      ],
+      "origin": "Memphis H3 Hash Hymnal (memphish3.com)",
+      "source_title": "Yo Ho",
+      "notes": "Review: left out the last three lines (they dig her up and have sex with the corpse).",
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "I placed my hand upon her toe, yo ho, yo ho"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "I placed my hand upon her toe, yo ho, yo ho"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "I placed my hand upon her toe"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "She said, \"Hey hasher, you're way too low!\""
+                }
+              ]
+            }
+          ],
+          "number": 1
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "\"Get it in, get it out, quit fucking about!\""
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Yo ho, yo ho, yo ho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "I placed my hand upon her knee..."
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "She said, \"Hey hasher, quit teasing me!\""
+                }
+              ]
+            }
+          ],
+          "number": 2
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "I placed my hand upon her thigh..."
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "She said, \"Hey hasher, you're way too shy!\""
+                }
+              ]
+            }
+          ],
+          "number": 3
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "I placed my hand upon her tit..."
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "She said, \"Hey hasher, you're getting it!\""
+                }
+              ]
+            }
+          ],
+          "number": 4
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "I placed my hand upon her twat..."
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "She said, \"Hey hasher, you've hit the spot!\""
+                }
+              ]
+            }
+          ],
+          "number": 5
+        },
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "I placed my dick into her mouth..."
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "She said, \"Mmrphhh mmrfrm fmmrrf mrphhh mmrfrm fmmrrf!\""
+                }
+              ]
+            }
+          ],
+          "number": 6
+        }
+      ],
+      "first_line": "I placed my hand upon her toe, yo ho, yo ho"
     },
     {
       "id": "you-aint-nothin-but-a-hasher",

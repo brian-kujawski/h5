@@ -1,14 +1,14 @@
 # Hymnal import review (November 2026)
 
-This is what happened to every song in the three hymnals you sent. The songbook went from 80 to 390 songs. Every new song is marked `metadata_status: provisional`.
+This is what happened to every song in the three hymnals you sent. The songbook went from 80 to 403 songs. Every new song is marked `metadata_status: provisional`.
 
 | Source | Songs in it | Imported | Already had it | Excluded | Held for you | Skipped |
 |---|---|---|---|---|---|---|
 | Flying Booger's Hash Hymns III (Summit H3, Jan 1994) | 428 | 306 | 28 | 74 (plus half of 252) | 8 | 12 |
 | Ibaraki H3 Hash Hymnal | 34 | 4 new (10 were Summit songs too) | 19 | 1 | 0 | 0 |
-| Memphis H3 hymnal | ~69 | 0 | – | – | – | all |
+| Memphis H3 Hash Hymnal (website, Nov 2026) | ~75 | 13 | ~50 | 4 | 4 | 4 |
 
-**Memphis:** the PDF only had its two-page title index, not the lyrics, and memphish3.com blocks automated access. There's a list of Memphis-only titles at the bottom. Send the full PDF or the lyrics and I'll run them through the same screen.
+**Memphis:** most of its songs are already in the songbook, either from the original seed list or from Summit. The Memphis section at the bottom covers the rest.
 
 ## How the tags were set
 
@@ -286,8 +286,48 @@ Each of these shows a "KENNEL REVIEW" line in the app until the flag is cleared.
 - **Yankee Air Pirate** `yankee-air-pirate` [check-content]: Fighter-pilot song.
 - **Yellow Ryder Truck** `yellow-ryder-truck` [kennel-specific]: Kennel-specific (Houston H3).
 
-## Memphis-only titles (need lyrics)
+## Memphis
 
-These are in the Memphis index but not in Summit or Ibaraki:
+### New songs (13)
+- Dinah, Won't You Blow Me?
+- Fuck Off
+- Give Me an A!
+- The Hash House Quartet
+- Last Night
+- My Asshole Is Sore
+- She's a Little Sexpot
+- Skeeter on My Peter
+- With an F, With an F, With an F-U-C
+- Would You Like a Finger?
+- **Thank God You Finally Shut Up:** male version only. The female version ("get back in the kitchen") was left out as misogynist.
+- **Clint Meets the Gay Caballero:** an original by King Rongjon. Flagged `check-content`, because the punchline is the Gay Caballero leaving Clint "sucked dry". Decide whether that reads as gay panic.
+- **Yo Ho:** imported without its last three lines, a necrophilia ending.
 
-Dinah Won't You Blow Me · Fuck Off · Give Me an A! · He's a Hasher, He's True Blue · Her Right Tit Hangs Down (probably a variant of Her Left Tit) · Last Night · My Asshole Is Sore · The Nipples on Her Tits · No One Wants to Fuck Grandma · Thank God You Finally Shut Up · She's a Little Sexpot · Skeeter on My Peter · With an F... · Would You Like a Finger? · Hash House Quartet · The Jesus Song · Yo Ho · Rodriguez the Mexican Pervert (the title alone suggests it would fail the screen)
+### Excluded
+- **The Wiggle of Her Ass / The Nipples on Her Tits:** a harriette reduced to "mean motherfucker, great cocksucker". Borderline misogynist.
+- **The Lassie with the Black Hairy Assey:** the same cumulative song as Summit's Bagpipe Song, with the "queerie" link and a "give her a good bashing" moral. It would come back if those links were reworded.
+- **My Girl's a Vegetable and The S&M Man:** excluded for the same reasons as their Summit versions.
+
+### Held
+- **No One Wants to Fuck Grandma:** incest throughout.
+- **Bestiality's Best, My Name Is Jack and When It's Incest Time in Texas:** the same songs as the Summit ones already held.
+
+### Skipped
+- Yogi Bear and Twenty Toes.
+- Poetry and Limericks, which aren't songs.
+
+### Already in the songbook
+
+Variants worth merging by hand:
+
+- **His One Skin:** has an extra "Jewish version" ("the rabbi he cut off my foreskin").
+- **Hog Calling Time in Nebraska:** alternate verses, including "sheep-fucking time in New Zealand".
+- **Here's to Brother Hasher:** singular version of Here's to Fellow Hashers.
+- **Her Right Tit Hangs Down:** mirror image of Her Left Tit.
+- **Follow the Band:** the same song as Marriage a la Mode, with many more job verses. One of them is "Pimp/beats whores", which would need to go.
+- **They Say He's a Joy to His Mother:** part of Why Was He Born So Beautiful?, and has an alternate verse.
+- **A Soldier I Will Be:** same as Soldier Song. Note that it has a "for country and you're queer" line, so that existing song may need a look too.
+- **Fuck a Duck:** the Do Re Mi version, the same as the Summit import.
+- **The Jesus Song:** extra verses for Jesus Can't Go Hashing.
+
+Plain duplicates: Dough the Stuff, The Frenchman Went to the Lavatory (Ou Est Le Papier?), Happy Birthday, He's a Hasher He's True Blue, He's the Meanest, Publicly Pissed On, Hitler, Mrs. Murphy, Hymn, Love Me Tender, Meet the Hashers, Our Lager, Pissonya, Sally in the Alley, Shitty Trail, There Was a Little Bird, What a Wank, Where Were You Last Week, Whip It Out at the Ball Game, Why Are We Waiting, Why Was He Born So Beautiful, As I Was Walking, Ball of Kirriemuir, Barnacle Bill, the Engineer's Song, Gang Bang, Glorious Victorious, Mayor of Bayswater, Hairs of Her Dickey Di-Do, I Don't Want to Join the Army, Chicago, Music Man, Swing Low, Woodpecker Song.
