@@ -1,11 +1,14 @@
 /**
  * Read-only access to the bundled songbook. Everything here works offline.
  *
- * Phase 0 searches in memory, which is instant for a few hundred songs.
- * Phase 1 swaps this for SQLite full-text search with the same function shapes.
+ * Search runs in memory over a prebuilt word index. For a songbook of a few hundred
+ * songs that is instant, works the same on iOS, Android and the web preview, and
+ * (unlike SQLite FTS) tolerates misspellings. If the songbook grows into the
+ * thousands, or content updates start downloading a database (Phase 3), swap the
+ * internals for SQLite FTS behind these same function shapes.
  */
 import data from './generated/songbook.json';
-import type { Moment, Song, Songbook } from './types';
+import type { Difficulty, Length, Moment, Rating, Song, Songbook, Style } from './types';
 
 const songbook = data as unknown as Songbook;
 
@@ -62,37 +65,130 @@ function lyricText(song: Song): string {
     .join(' ');
 }
 
-const index = new Map(
-  songs.map((s) => [
-    s.id,
-    {
-      title: normalize([s.title, ...s.alt_titles].join(' ')),
-      body: normalize(`${s.tune ?? ''} ${lyricText(s)}`),
-    },
-  ]),
-);
+type IndexEntry = {
+  title: string;
+  body: string;
+  /** Every distinct word in the title and lyrics, for typo-tolerant matching. */
+  words: string[];
+};
+
+function buildEntry(s: Song): IndexEntry {
+  const title = normalize([s.title, ...s.alt_titles].join(' '));
+  const body = normalize(`${s.tune ?? ''} ${lyricText(s)}`);
+  return { title, body, words: [...new Set(`${title} ${body}`.split(' ').filter(Boolean))] };
+}
+
+const index = new Map(songs.map((s) => [s.id, buildEntry(s)]));
+const entryFor = (song: Song) => index.get(song.id) ?? buildEntry(song);
+
+/** Edit distance counting a swap of two neighbouring letters as one typo; gives up once it exceeds `max`. */
+export function editDistance(a: string, b: string, max: number): number {
+  if (Math.abs(a.length - b.length) > max) return max + 1;
+  let prev2: number[] = [];
+  let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i];
+    let rowMin = i;
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost);
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) cur[j] = Math.min(cur[j], prev2[j - 2] + 1);
+      rowMin = Math.min(rowMin, cur[j]);
+    }
+    if (rowMin > max) return max + 1;
+    prev2 = prev;
+    prev = cur;
+  }
+  return prev[b.length];
+}
+
+/** How many typos a query word may have: none for short words, one from 4 letters, two from 8. */
+const typoBudget = (word: string) => (word.length >= 8 ? 2 : word.length >= 4 ? 1 : 0);
+
+const startsAWord = (haystack: string, w: string) => haystack.startsWith(w) || haystack.includes(` ${w}`);
+
+/** True when some word starts with `w`, or (allowing typos) is within the typo budget of it or of its prefix. */
+function fuzzyHit(words: string[], w: string): boolean {
+  const budget = typoBudget(w);
+  if (budget === 0) return false;
+  return words.some(
+    (word) => editDistance(w, word, budget) <= budget || (word.length > w.length && editDistance(w, word.slice(0, w.length), budget) <= budget),
+  );
+}
 
 /**
  * Every word of the query must start a word in the song (so "swing lo" finds Swing Low).
- * Title matches rank above lyric matches.
+ * If nothing matches exactly, misspelled words are allowed ("chicgo" finds Chicago).
+ * Title matches rank above lyric matches, and exact matches above fuzzy ones.
  */
 export function searchSongs(query: string, cleanMode: boolean, pool: Song[] = songs): Song[] {
   const words = normalize(query).split(' ').filter(Boolean);
   const visible = pool.filter((s) => isVisible(s, cleanMode));
-  if (words.length === 0) return visible;
-
-  const matches = (haystack: string) =>
-    words.every((w) => haystack.startsWith(w) || haystack.includes(` ${w}`));
+  if (words.length === 0) return [...visible].sort(byTitle);
 
   const scored: { song: Song; score: number }[] = [];
   for (const song of visible) {
-    const entry = index.get(song.id);
-    if (!entry) continue;
-    if (matches(entry.title)) scored.push({ song, score: 0 });
-    else if (matches(`${entry.title} ${entry.body}`)) scored.push({ song, score: 1 });
+    const entry = entryFor(song);
+    const all = `${entry.title} ${entry.body}`;
+    if (words.every((w) => startsAWord(entry.title, w))) scored.push({ song, score: 0 });
+    else if (words.every((w) => startsAWord(all, w))) scored.push({ song, score: 1 });
+    else if (words.every((w) => startsAWord(all, w) || fuzzyHit(entry.words, w))) scored.push({ song, score: 2 });
   }
-  return scored.sort((a, b) => a.score - b.score || a.song.title.localeCompare(b.song.title)).map((x) => x.song);
+  // Only fall back to fuzzy matches when there are no exact ones, so typo tolerance never adds noise.
+  const best = scored.some((x) => x.score < 2) ? scored.filter((x) => x.score < 2) : scored;
+  return best.sort((a, b) => a.score - b.score || byTitle(a.song, b.song)).map((x) => x.song);
 }
+
+const byTitle = (a: Song, b: Song) => a.title.localeCompare(b.title);
+
+/** Songs tab filters. An empty list means "any". */
+export type SongFilters = {
+  moments: string[];
+  ratings: Rating[];
+  lengths: Length[];
+  styles: Style[];
+  difficulties: Difficulty[];
+  hasRecording: boolean;
+};
+
+export const NO_FILTERS: SongFilters = {
+  moments: [],
+  ratings: [],
+  lengths: [],
+  styles: [],
+  difficulties: [],
+  hasRecording: false,
+};
+
+export const activeFilterCount = (f: SongFilters) =>
+  f.moments.length + f.ratings.length + f.lengths.length + f.styles.length + f.difficulties.length + (f.hasRecording ? 1 : 0);
+
+/** True when the song fits a moment directly or through that moment's `includes`, same as the Circle tiles. */
+export function fitsMoment(song: Song, momentId: string): boolean {
+  const ids = [momentId, ...(getMoment(momentId)?.includes ?? [])];
+  return song.moments.some((m) => ids.includes(m));
+}
+
+/** Within a category any selected value matches (OR); across categories all must match (AND). */
+export function matchesFilters(song: Song, f: SongFilters): boolean {
+  return (
+    (f.moments.length === 0 || f.moments.some((m) => fitsMoment(song, m))) &&
+    (f.ratings.length === 0 || f.ratings.includes(song.rating)) &&
+    (f.lengths.length === 0 || f.lengths.includes(song.length)) &&
+    (f.styles.length === 0 || f.styles.some((s) => song.style.includes(s))) &&
+    (f.difficulties.length === 0 || f.difficulties.includes(song.difficulty)) &&
+    (!f.hasRecording || song.recordings.length > 0)
+  );
+}
+
+/** Search plus filters, as used by the Songs tab. */
+export function findSongs(query: string, filters: SongFilters, cleanMode: boolean, pool: Song[] = songs): Song[] {
+  return searchSongs(query, cleanMode, pool).filter((s) => matchesFilters(s, filters));
+}
+
+/** Style values that at least one song uses, so the filter never offers a dead end. */
+export const stylesInUse: Style[] = [...new Set(songs.flatMap((s) => s.style))].sort() as Style[];
+export const anyRecordings = songs.some((s) => s.recordings.length > 0);
 
 /** Moments that have at least one visible song, for the given group. */
 export function momentsWithCounts(group: Moment['group'], cleanMode: boolean) {

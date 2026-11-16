@@ -44,6 +44,19 @@ docs/                recording guide
 
 Edit or add a file in `content/songs/`, run `npm run content`, and open a pull request with both changes. The format is in [content/README.md](content/README.md).
 
+## What's in the app (Phase 1)
+
+- **Circle:** moment tiles in DeMon running order, plus a search shortcut.
+- **Songs:** search titles and any lyric line, typos welcome ("swnig lo" finds Swing Low); filter by moment, rating, length, difficulty and style.
+- **Song screen:** structured lyrics (chorus band, leader/all parts, verse numbers), A− / A+ text size, share as text with an `h5://song/<id>` link, tap a moment chip for more songs like it, screen stays awake.
+- **Circle mode:** full-screen huge lyrics; tap the screen (or the arrows) to move a verse at a time, tap the top strip to go back.
+- **Saved:** your songs in circle order, with reorder and remove. Saving tips a beer mug (skipped with Reduce Motion).
+- **More:** clean mode, theme, lyrics size, glossary.
+
+![Phase 1, light](docs/screenshots/phase1-light.png)
+
+Search runs in memory over a prebuilt word index rather than SQLite FTS: for a few hundred songs it is instant, behaves the same on iOS, Android and web, and tolerates misspellings, which FTS does not. `src/content/songbook.ts` keeps the same function shapes so SQLite can slot in if the songbook grows or when Phase 3 starts downloading content updates.
+
 ## Decisions baked in
 
 - **18+ app.** One age check on first launch, plus the right store rating (Apple 18+, Google Play Mature 17+). There are no per-song age badges.
@@ -55,8 +68,8 @@ Edit or add a file in `content/songs/`, run `npm run content`, and open a pull r
 
 From the H5 plan:
 
-- **Phase 0, foundations** (this repo's starting point): songs in the content repo, moment taxonomy, mock-ups of the four key screens, about 10 recordings.
-- **Phase 1, lyrics MVP:** the four tabs for real, song screen and circle mode, search and filters, light and dark, everything offline.
+- **Phase 0, foundations** (done): songs in the content repo, moment taxonomy, mock-ups of the four key screens, about 10 recordings.
+- **Phase 1, lyrics MVP** (this release, 0.2.0): the four tabs for real, song screen and circle mode, search and filters, light and dark, everything offline. Gate before Phase 2: use it at three real circles.
 - **Phase 2, recordings:** streaming, downloads, mini player, background playback.
 - **Phase 3, public launch:** store listings, age ratings, crash reporting, over-the-air content updates.
 - **Phase 4, community:** in-app song submissions, Custom Hymnals; first phase with accounts and a backend.

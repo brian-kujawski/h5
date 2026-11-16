@@ -4,6 +4,7 @@ import { Pressable, StyleSheet, Switch, View } from 'react-native';
 import { TabScreen } from '@/components/screen';
 import { Text } from '@/components/text';
 import { songs } from '@/content/songbook';
+import { LYRIC_SCALES, stepScale } from '@/lib/circle';
 import { type ThemeChoice, useSettings } from '@/lib/settings';
 import { radius, space, TAP } from '@/theme/tokens';
 
@@ -75,6 +76,34 @@ export default function MoreScreen() {
             })}
           </View>
         </View>
+        <View style={[styles.divider, { backgroundColor: colors.divider }]} />
+        <View style={styles.row}>
+          <View style={styles.rowText}>
+            <Text variant="bodyBold">Lyrics size</Text>
+            <Text variant="secondary" color="textSecondary">
+              On top of your phone’s text size. Also under Aa on any song.
+            </Text>
+          </View>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Smaller lyrics"
+            disabled={settings.lyricScale <= LYRIC_SCALES[0]}
+            onPress={() => update({ lyricScale: stepScale(settings.lyricScale, -1) })}
+            style={[styles.step, { borderColor: colors.divider }]}>
+            <Text variant="bodyBold">A−</Text>
+          </Pressable>
+          <Text variant="bodyBold" style={styles.stepValue}>
+            {Math.round(settings.lyricScale * 100)}%
+          </Text>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Bigger lyrics"
+            disabled={settings.lyricScale >= LYRIC_SCALES[LYRIC_SCALES.length - 1]}
+            onPress={() => update({ lyricScale: stepScale(settings.lyricScale, 1) })}
+            style={[styles.step, { borderColor: colors.divider }]}>
+            <Text variant="bodyBold">A+</Text>
+          </Pressable>
+        </View>
       </Card>
 
       <Text variant="label" color="textSecondary">GLOSSARY FOR NEWCOMERS</Text>
@@ -94,8 +123,9 @@ export default function MoreScreen() {
           {songs.length} songs, sung at MoA2H3 and DeMonH3. Seeded from the Motown Ann Arbor H3 Hymnal (rev. 20 April
           2009). Song sources are credited where known.
         </Text>
+        <Text color="textSecondary">Everything works offline. No signal at the trailhead? Still singing.</Text>
         <Text variant="secondary" color="textSecondary">
-          Version {Constants.expoConfig?.version ?? 'dev'} · Phase 0 preview
+          Version {Constants.expoConfig?.version ?? 'dev'}
         </Text>
       </Card>
     </TabScreen>
@@ -110,4 +140,6 @@ const styles = StyleSheet.create({
   segment: { flexDirection: 'row', gap: space.sm },
   segmentItem: { flex: 1, minHeight: TAP, borderRadius: radius.card, borderWidth: 1, alignItems: 'center', justifyContent: 'center' },
   glossary: { gap: 2 },
+  step: { minWidth: TAP, minHeight: TAP, borderWidth: 1, borderRadius: radius.card, alignItems: 'center', justifyContent: 'center' },
+  stepValue: { minWidth: 48, textAlign: 'center' },
 });
