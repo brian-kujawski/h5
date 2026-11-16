@@ -1,0 +1,162 @@
+# Moment taxonomy: the occasions shown as tiles on the Circle tab.
+#
+# PROPOSED, NOT YET AGREED. Agreeing this list is a Phase 0 gate.
+# It merges the plan's starting set with the tags already used in the seed
+# songbook. Every `moments:` value in content/songs/*.md must be an id below,
+# or `npm run content` fails.
+#
+# Fields:
+#   id      stable id used in song files (kebab-case, never rename once shipped)
+#   name    display name, sentence case
+#   blurb   one line shown under the tile
+#   icon    Phosphor icon name (https://phosphoricons.com)
+#   group   circle   = the main tiles, in the order a circle usually runs
+#           extra    = shown under "More moments"
+#
+# Order in this file is the display order.
+
+- id: opening
+  name: Opening circle
+  blurb: Kick things off
+  icon: MegaphoneSimple
+  group: circle
+
+- id: hares
+  name: Hares
+  blurb: Honour (or roast) the hares
+  icon: Rabbit
+  group: circle
+
+- id: virgin
+  name: Virgins
+  blurb: First trail, first down-down
+  icon: Plant
+  group: circle
+
+- id: returner
+  name: Returners
+  blurb: Look who's back
+  icon: ArrowUUpLeft
+  group: circle
+
+- id: visitor
+  name: Visitors
+  blurb: Hashers from other kennels
+  icon: Backpack
+  group: circle
+
+- id: fastest-runner
+  name: Fastest runner
+  blurb: Front-running bastard (FRB)
+  icon: Lightning
+  group: circle
+
+- id: last-in
+  name: Last in
+  blurb: Took the scenic route
+  icon: Hourglass
+  group: circle
+
+- id: trail-complaint
+  name: Shitty trail
+  blurb: The trail was a crime
+  icon: ThumbsDown
+  group: circle
+
+- id: trail-mishap
+  name: Trail mishap
+  blurb: Fell, got lost, did something dumb
+  icon: Warning
+  group: circle
+
+- id: etiquette-breach
+  name: Hash crimes
+  blurb: New shoes, whistles, names and other sins
+  icon: Siren
+  group: circle
+
+- id: new-shoes
+  name: New shoes
+  blurb: Fresh kicks get christened
+  icon: Sneaker
+  group: circle
+
+- id: birthday
+  name: Birthday
+  blurb: Another year closer to the beer
+  icon: Cake
+  group: circle
+
+- id: anniversary
+  name: Run milestone
+  blurb: 69th, 100th, 666th trail
+  icon: Confetti
+  group: circle
+
+- id: naming
+  name: Naming
+  blurb: A hasher gets their name
+  icon: Tag
+  group: circle
+
+- id: any-down-down
+  name: Any down-down
+  blurb: Works for anyone in the middle
+  icon: BeerStein
+  group: circle
+
+- id: group-song
+  name: Whole circle
+  blurb: Everyone sings
+  icon: UsersThree
+  group: circle
+
+- id: closing
+  name: Closing
+  blurb: Last song of the night
+  icon: MoonStars
+  group: circle
+
+# Extras: real moments from the seed songbook that don't need a tile of their own.
+
+- id: roast
+  name: Roasts
+  blurb: Songs aimed at whoever's in the middle
+  icon: Fire
+  group: extra
+
+- id: too-drunk
+  name: Too drunk
+  blurb: For the hasher who peaked early
+  icon: SmileyXEyes
+  group: extra
+
+- id: stalling
+  name: Stalling
+  blurb: Fill time while the beer arrives
+  icon: Clock
+  group: extra
+
+- id: farewell
+  name: Departing hasher
+  blurb: Send them off properly
+  icon: HandWaving
+  group: extra
+
+- id: life-event
+  name: Life events
+  blurb: Weddings, divorces, babies
+  icon: Heart
+  group: extra
+
+- id: autohash
+  name: Car trouble
+  blurb: Drove part of the trail
+  icon: Car
+  group: extra
+
+- id: any-time
+  name: Any time
+  blurb: Good whenever
+  icon: MusicNotes
+  group: extra
