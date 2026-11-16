@@ -56,7 +56,10 @@ function main() {
   }
 
   const json = `${JSON.stringify(songbook, null, 2)}\n`;
-  const unused = songbook.moments.filter((m) => !songbook.songs.some((s) => s.moments.includes(m.id)));
+  const unused = songbook.moments.filter((m) => {
+    const ids = [m.id, ...(m.includes ?? [])];
+    return !songbook.songs.some((s) => s.moments.some((id) => ids.includes(id)));
+  });
   const summary = `${songbook.songs.length} songs, ${songbook.moments.length} moments`;
 
   if (check) {

@@ -66,3 +66,17 @@ describe('songsForMoment', () => {
     assert.equal(getSong('nope'), undefined);
   });
 });
+
+describe('moment includes', () => {
+  it('lists directly tagged songs before included ones', () => {
+    const list = songsForMoment('hares', false);
+    const firstIncluded = list.findIndex((s) => !s.moments.includes('hares'));
+    assert.ok(firstIncluded > 0, 'expected hares songs first, then trail-complaint songs');
+    for (const s of list.slice(firstIncluded)) assert.ok(!s.moments.includes('hares'));
+  });
+  it('fills a tile from the moments it includes', () => {
+    const ids = songsForMoment('accusations', false).map((s) => s.id);
+    const expected = songs.filter((s) => s.moments.some((m) => ['trail-mishap', 'etiquette-breach'].includes(m)));
+    for (const s of expected) assert.ok(ids.includes(s.id), `${s.id} missing from accusations`);
+  });
+});

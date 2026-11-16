@@ -242,6 +242,15 @@ export function validateMoments(raw: unknown): { moments: Moment[]; errors: stri
     if (!isString(m?.blurb)) errors.push(`${where}: blurb is required`);
     if (!isString(m?.icon)) errors.push(`${where}: icon is required`);
     if (!isOneOf(MOMENT_GROUPS, m?.group)) errors.push(`${where}: group must be circle or extra`);
+    if (m?.includes !== undefined && !isStringArray(m.includes)) errors.push(`${where}: includes must be a list`);
+  });
+  const ids = new Set(raw.map((m: Meta) => m?.id));
+  raw.forEach((m: Meta) => {
+    if (!isStringArray(m?.includes)) return;
+    for (const inc of m.includes) {
+      if (!ids.has(inc)) errors.push(`moments (${String(m.id)}): includes unknown moment "${inc}"`);
+      if (inc === m.id) errors.push(`moments (${String(m.id)}): cannot include itself`);
+    }
   });
   return { moments: raw as Moment[], errors };
 }

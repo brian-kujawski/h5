@@ -1,6 +1,6 @@
 # H5 songbook content
 
-Every song is one Markdown file in `songs/`. Songmeisters add or fix songs with a pull request, and Git history shows who changed what. `moments.yml` is the list of occasions shown as tiles on the Circle tab.
+Every song is one Markdown file in `songs/`. Songmeisters add or fix songs with a pull request, and Git history shows who changed what. `moments.yml` is the list of occasions shown as tiles on the Circle tab. The main tiles follow the DeMon H3 ending-circle running order (Circle up, Hares, Virgins, Visitors, FRB, Accusations, Hashy birthdays, Backsliders, May the hash go in peace); a tile can `include` finer-grained moments, so Accusations also lists trail-mishap, hash-crime and too-drunk songs.
 
 After editing, run:
 
@@ -12,7 +12,7 @@ That validates every file and rebuilds `src/content/generated/songbook.json`, wh
 
 ## The seed songbook
 
-82 songs imported from the Motown Ann Arbor H3 Hymnal PDF (rev. 20 April 2009). The default bundled list is the songs sung at MoA2H3 and DeMonH3, and it will change over time.
+82 songs imported from the Motown Ann Arbor H3 Hymnal PDF (rev. 20 April 2009), plus "Here's to Fellow Hashers" from the DeMon H3 RA cheat sheet. The default bundled list is the songs sung at MoA2H3 and DeMonH3, and it will change over time.
 
 **All metadata is provisional.** Moments, ratings, length, difficulty and hooks are rough placeholders to show the format. Real values come from hashers. Every file says `metadata_status: provisional` until someone reviews it.
 

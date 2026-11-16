@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
-import { firstSungLine, parseBody, parseLine, parseSegments, splitFrontMatter, validateMeta } from '../src/content/parse';
+import { firstSungLine, parseBody, parseLine, parseSegments, splitFrontMatter, validateMeta, validateMoments } from '../src/content/parse';
 
 const validMeta = () => ({
   id: 'test-song',
@@ -122,5 +122,17 @@ describe('validateMeta', () => {
       moments,
     );
     assert.match(errors.join(), /consent_confirmed must be true/);
+  });
+});
+
+describe('validateMoments', () => {
+  const base = { name: 'X', blurb: 'Y', icon: 'BeerStein', group: 'circle' };
+  it('rejects includes of unknown moments', () => {
+    const { errors } = validateMoments([{ ...base, id: 'a', includes: ['nope'] }]);
+    assert.match(errors.join(), /includes unknown moment "nope"/);
+  });
+  it('accepts valid includes', () => {
+    const { errors } = validateMoments([{ ...base, id: 'a', includes: ['b'] }, { ...base, id: 'b', group: 'extra' }]);
+    assert.deepEqual(errors, []);
   });
 });

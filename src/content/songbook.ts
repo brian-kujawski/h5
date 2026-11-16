@@ -25,14 +25,18 @@ const LENGTH_ORDER = { quick: 0, standard: 1, epic: 2 } as const;
 const DIFFICULTY_ORDER = { easy: 0, medium: 1, hard: 2 } as const;
 
 /**
- * Songs for a moment, ranked for circle: songs made for this exact moment first
- * (fewest other moments), then easier and quicker songs, then by title.
+ * Songs for a moment, ranked for circle: songs tagged with this moment first,
+ * then songs from moments it includes (see `includes` in moments.yml).
+ * Within each, songs made for fewer moments first, then easier and quicker, then by title.
  */
 export function songsForMoment(momentId: string, cleanMode: boolean, pool: Song[] = songs): Song[] {
+  const included = new Set(getMoment(momentId)?.includes ?? []);
+  const tier = (s: Song) => (s.moments.includes(momentId) ? 0 : s.moments.some((m) => included.has(m)) ? 1 : -1);
   return pool
-    .filter((s) => s.moments.includes(momentId) && isVisible(s, cleanMode))
+    .filter((s) => tier(s) >= 0 && isVisible(s, cleanMode))
     .sort(
       (a, b) =>
+        tier(a) - tier(b) ||
         a.moments.length - b.moments.length ||
         DIFFICULTY_ORDER[a.difficulty] - DIFFICULTY_ORDER[b.difficulty] ||
         LENGTH_ORDER[a.length] - LENGTH_ORDER[b.length] ||

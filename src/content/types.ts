@@ -36,6 +36,8 @@ export type Moment = {
   /** Phosphor icon name. */
   icon: string;
   group: MomentGroup;
+  /** Other moment ids whose songs also show on this tile, after the directly tagged ones. */
+  includes?: string[];
 };
 
 /** A run of text inside a lyric line. `note` is a performance note or gesture, written in (parentheses). */

@@ -3,30 +3,26 @@
   "moments": [
     {
       "id": "opening",
-      "name": "Opening circle",
-      "blurb": "Kick things off",
+      "name": "Circle up",
+      "blurb": "Start the ending circle",
       "icon": "MegaphoneSimple",
       "group": "circle"
     },
     {
       "id": "hares",
       "name": "Hares",
-      "blurb": "Honour (or roast) the hares",
+      "blurb": "What's your excuse?",
       "icon": "Rabbit",
-      "group": "circle"
+      "group": "circle",
+      "includes": [
+        "trail-complaint"
+      ]
     },
     {
       "id": "virgin",
       "name": "Virgins",
-      "blurb": "First trail, first down-down",
+      "blurb": "Teach them the art of a down-down",
       "icon": "Plant",
-      "group": "circle"
-    },
-    {
-      "id": "returner",
-      "name": "Returners",
-      "blurb": "Look who's back",
-      "icon": "ArrowUUpLeft",
       "group": "circle"
     },
     {
@@ -38,65 +34,48 @@
     },
     {
       "id": "fastest-runner",
-      "name": "Fastest runner",
-      "blurb": "Front-running bastard (FRB)",
+      "name": "FRB",
+      "blurb": "Front-running bastard, and next hare",
       "icon": "Lightning",
       "group": "circle"
     },
     {
-      "id": "last-in",
-      "name": "Last in",
-      "blurb": "Took the scenic route",
-      "icon": "Hourglass",
-      "group": "circle"
-    },
-    {
-      "id": "trail-complaint",
-      "name": "Shitty trail",
-      "blurb": "The trail was a crime",
-      "icon": "ThumbsDown",
-      "group": "circle"
-    },
-    {
-      "id": "trail-mishap",
-      "name": "Trail mishap",
-      "blurb": "Fell, got lost, did something dumb",
-      "icon": "Warning",
-      "group": "circle"
-    },
-    {
-      "id": "etiquette-breach",
-      "name": "Hash crimes",
-      "blurb": "New shoes, whistles, names and other sins",
+      "id": "accusations",
+      "name": "Accusations",
+      "blurb": "Accolades and tales from trail",
       "icon": "Siren",
-      "group": "circle"
-    },
-    {
-      "id": "new-shoes",
-      "name": "New shoes",
-      "blurb": "Fresh kicks get christened",
-      "icon": "Sneaker",
-      "group": "circle"
+      "group": "circle",
+      "includes": [
+        "trail-mishap",
+        "etiquette-breach",
+        "too-drunk",
+        "new-shoes",
+        "last-in",
+        "autohash"
+      ]
     },
     {
       "id": "birthday",
-      "name": "Birthday",
-      "blurb": "Another year closer to the beer",
+      "name": "Hashy birthdays",
+      "blurb": "Birthdays and anniversaries",
       "icon": "Cake",
+      "group": "circle",
+      "includes": [
+        "anniversary"
+      ]
+    },
+    {
+      "id": "returner",
+      "name": "Backsliders",
+      "blurb": "Missed two or more hashes",
+      "icon": "ArrowUUpLeft",
       "group": "circle"
     },
     {
-      "id": "anniversary",
-      "name": "Run milestone",
-      "blurb": "69th, 100th, 666th trail",
-      "icon": "Confetti",
-      "group": "circle"
-    },
-    {
-      "id": "naming",
-      "name": "Naming",
-      "blurb": "A hasher gets their name",
-      "icon": "Tag",
+      "id": "closing",
+      "name": "May the hash go in peace",
+      "blurb": "Last song of the night",
+      "icon": "MoonStars",
       "group": "circle"
     },
     {
@@ -114,11 +93,53 @@
       "group": "circle"
     },
     {
-      "id": "closing",
-      "name": "Closing",
-      "blurb": "Last song of the night",
-      "icon": "MoonStars",
-      "group": "circle"
+      "id": "trail-mishap",
+      "name": "Trail mishap",
+      "blurb": "Fell, got lost, did something dumb",
+      "icon": "Warning",
+      "group": "extra"
+    },
+    {
+      "id": "etiquette-breach",
+      "name": "Hash crimes",
+      "blurb": "Whistles, real names and other sins",
+      "icon": "Siren",
+      "group": "extra"
+    },
+    {
+      "id": "new-shoes",
+      "name": "New shoes",
+      "blurb": "Fresh kicks get christened",
+      "icon": "Sneaker",
+      "group": "extra"
+    },
+    {
+      "id": "last-in",
+      "name": "Last in",
+      "blurb": "Took the scenic route",
+      "icon": "Hourglass",
+      "group": "extra"
+    },
+    {
+      "id": "trail-complaint",
+      "name": "Shitty trail",
+      "blurb": "The trail was a crime",
+      "icon": "ThumbsDown",
+      "group": "extra"
+    },
+    {
+      "id": "anniversary",
+      "name": "Run milestone",
+      "blurb": "69th, 100th, 666th trail",
+      "icon": "Confetti",
+      "group": "extra"
+    },
+    {
+      "id": "naming",
+      "name": "Naming",
+      "blurb": "A hasher gets their name",
+      "icon": "Tag",
+      "group": "extra"
     },
     {
       "id": "roast",
@@ -4320,6 +4341,102 @@
         }
       ],
       "first_line": "Here's to , he’s/she’s true blue"
+    },
+    {
+      "id": "heres-to-fellow-hashers",
+      "title": "Here's to Fellow Hashers",
+      "alt_titles": [],
+      "tune": null,
+      "hook": "Opens the DeMon ending circle. Everybody chug-a-lugs.",
+      "moments": [
+        "opening",
+        "group-song"
+      ],
+      "style": [
+        "sing-along"
+      ],
+      "rating": "explicit",
+      "length": "quick",
+      "difficulty": "easy",
+      "pronoun_variants": false,
+      "fill_in": [],
+      "ends_with_down_down": false,
+      "review_flags": [],
+      "origin": "DeMon H3 RA cheat sheet",
+      "source_title": "ENDING CIRCLE",
+      "notes": "Same tune and shape as the Toledo Down-Down Song, without the slur. The cheat sheet writes f*cked and f*cker with asterisks.",
+      "recordings": [],
+      "metadata_status": "provisional",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Here's to fellow hashers, fellow hashers, fellow hashers,"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Here's to fellow hashers, may they chug-a-lug."
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "They're happy, they're jolly, they're f*cked up by golly,"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Here's to fellow hashers, may they chug-a-lug."
+                }
+              ]
+            }
+          ],
+          "number": 1
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "So drink mother f*cker, drink mother f*cker,"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Drink mother f*cker, drink mother f*cker,"
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "kind": "lyric",
+                  "text": "Here's to fellow hashers, may they chug-a-lug."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "first_line": "Here's to fellow hashers, fellow hashers, fellow hashers,"
     },
     {
       "id": "heres-to-the-hare",
@@ -9256,7 +9373,7 @@
       "review_flags": [],
       "origin": "Motown Ann Arbor H3 Hymnal (rev. 20 April 2009)",
       "source_title": "WE'VE GOT VIRGINS / Tune - Frere Jacques",
-      "notes": null,
+      "notes": "DeMon H3 sings the last line as 'Up the ass, down the hatch' and adds the down-down lesson first: cups to lips on 'down, down, down', then empty cup on your head.",
       "recordings": [],
       "metadata_status": "provisional",
       "sections": [

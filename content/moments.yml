@@ -1,42 +1,41 @@
 # Moment taxonomy: the occasions shown as tiles on the Circle tab.
 #
 # PROPOSED, NOT YET AGREED. Agreeing this list is a Phase 0 gate.
-# It merges the plan's starting set with the tags already used in the seed
-# songbook. Every `moments:` value in content/songs/*.md must be an id below,
-# or `npm run content` fails.
+# The main tiles follow the DeMon H3 ending-circle running order, which is
+# when the RA asks the pack for a song. Every `moments:` value in
+# content/songs/*.md must be an id below, or `npm run content` fails.
 #
 # Fields:
-#   id      stable id used in song files (kebab-case, never rename once shipped)
-#   name    display name, sentence case
-#   blurb   one line shown under the tile
-#   icon    Phosphor icon name (https://phosphoricons.com)
-#   group   circle   = the main tiles, in the order a circle usually runs
-#           extra    = shown under "More moments"
+#   id        stable id used in song files (kebab-case, never rename once shipped)
+#   name      display name, sentence case
+#   blurb     one line shown under the tile
+#   icon      Phosphor icon name (https://phosphoricons.com)
+#   group     circle = the main tiles, in running order
+#             extra  = shown under "More moments"
+#   includes  optional: other moment ids whose songs also show on this tile,
+#             listed after the songs tagged with this moment directly
 #
 # Order in this file is the display order.
 
+# --- Ending circle, in DeMon running order ---
+
 - id: opening
-  name: Opening circle
-  blurb: Kick things off
+  name: Circle up
+  blurb: Start the ending circle
   icon: MegaphoneSimple
   group: circle
 
 - id: hares
   name: Hares
-  blurb: Honour (or roast) the hares
+  blurb: What's your excuse?
   icon: Rabbit
   group: circle
+  includes: [trail-complaint]
 
 - id: virgin
   name: Virgins
-  blurb: First trail, first down-down
+  blurb: Teach them the art of a down-down
   icon: Plant
-  group: circle
-
-- id: returner
-  name: Returners
-  blurb: Look who's back
-  icon: ArrowUUpLeft
   group: circle
 
 - id: visitor
@@ -46,58 +45,38 @@
   group: circle
 
 - id: fastest-runner
-  name: Fastest runner
-  blurb: Front-running bastard (FRB)
+  name: FRB
+  blurb: Front-running bastard, and next hare
   icon: Lightning
   group: circle
 
-- id: last-in
-  name: Last in
-  blurb: Took the scenic route
-  icon: Hourglass
-  group: circle
-
-- id: trail-complaint
-  name: Shitty trail
-  blurb: The trail was a crime
-  icon: ThumbsDown
-  group: circle
-
-- id: trail-mishap
-  name: Trail mishap
-  blurb: Fell, got lost, did something dumb
-  icon: Warning
-  group: circle
-
-- id: etiquette-breach
-  name: Hash crimes
-  blurb: New shoes, whistles, names and other sins
+- id: accusations
+  name: Accusations
+  blurb: Accolades and tales from trail
   icon: Siren
   group: circle
-
-- id: new-shoes
-  name: New shoes
-  blurb: Fresh kicks get christened
-  icon: Sneaker
-  group: circle
+  includes: [trail-mishap, etiquette-breach, too-drunk, new-shoes, last-in, autohash]
 
 - id: birthday
-  name: Birthday
-  blurb: Another year closer to the beer
+  name: Hashy birthdays
+  blurb: Birthdays and anniversaries
   icon: Cake
   group: circle
+  includes: [anniversary]
 
-- id: anniversary
-  name: Run milestone
-  blurb: 69th, 100th, 666th trail
-  icon: Confetti
+- id: returner
+  name: Backsliders
+  blurb: Missed two or more hashes
+  icon: ArrowUUpLeft
   group: circle
 
-- id: naming
-  name: Naming
-  blurb: A hasher gets their name
-  icon: Tag
+- id: closing
+  name: May the hash go in peace
+  blurb: Last song of the night
+  icon: MoonStars
   group: circle
+
+# --- Any time ---
 
 - id: any-down-down
   name: Any down-down
@@ -111,13 +90,49 @@
   icon: UsersThree
   group: circle
 
-- id: closing
-  name: Closing
-  blurb: Last song of the night
-  icon: MoonStars
-  group: circle
+# --- Extras: finer-grained tags, mostly rolled into the tiles above ---
 
-# Extras: real moments from the seed songbook that don't need a tile of their own.
+- id: trail-mishap
+  name: Trail mishap
+  blurb: Fell, got lost, did something dumb
+  icon: Warning
+  group: extra
+
+- id: etiquette-breach
+  name: Hash crimes
+  blurb: Whistles, real names and other sins
+  icon: Siren
+  group: extra
+
+- id: new-shoes
+  name: New shoes
+  blurb: Fresh kicks get christened
+  icon: Sneaker
+  group: extra
+
+- id: last-in
+  name: Last in
+  blurb: Took the scenic route
+  icon: Hourglass
+  group: extra
+
+- id: trail-complaint
+  name: Shitty trail
+  blurb: The trail was a crime
+  icon: ThumbsDown
+  group: extra
+
+- id: anniversary
+  name: Run milestone
+  blurb: 69th, 100th, 666th trail
+  icon: Confetti
+  group: extra
+
+- id: naming
+  name: Naming
+  blurb: A hasher gets their name
+  icon: Tag
+  group: extra
 
 - id: roast
   name: Roasts
