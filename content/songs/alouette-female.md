@@ -3,7 +3,7 @@ id: alouette-female
 title: "Alouette (female volunteer)"
 tune: "Alouette"
 hook: "Needs a volunteer in the middle; the list of body parts grows each round."
-moments: [group-song]
+moments: [any-time]
 style: [call-and-response, sing-along]
 rating: explicit
 length: epic

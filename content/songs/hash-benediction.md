@@ -3,7 +3,7 @@ id: hash-benediction
 title: "Hash Benediction"
 tune: null
 hook: "A blessing before trail."
-moments: [opening]
+moments: [any-time]
 style: [spoken]
 rating: clean
 length: standard

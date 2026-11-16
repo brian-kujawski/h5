@@ -3,7 +3,7 @@ id: our-lager
 title: "Our Lager"
 tune: null
 hook: "The beer prayer."
-moments: [opening]
+moments: [any-time]
 style: [spoken]
 rating: clean
 length: standard

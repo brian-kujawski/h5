@@ -3,7 +3,7 @@ id: jesus-cant-go-hashing
 title: "Jesus Can't Go Hashing"
 tune: null
 hook: "Sing each verse three times, then the chorus. Has a special 'too drunk' verse."
-moments: [group-song, too-drunk]
+moments: [any-time, too-drunk]
 style: [sing-along]
 rating: cheeky
 length: standard

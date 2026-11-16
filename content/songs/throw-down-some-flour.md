@@ -3,7 +3,7 @@ id: throw-down-some-flour
 title: "Throw Down Some Flour"
 tune: "Beer Barrel Polka"
 hook: "A cheer for the hares and the pack."
-moments: [hares, group-song]
+moments: [hares, any-time]
 style: [sing-along]
 rating: clean
 length: standard

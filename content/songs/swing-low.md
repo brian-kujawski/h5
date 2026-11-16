@@ -3,7 +3,7 @@ id: swing-low
 title: "Swing Low"
 tune: "Swing Low, Sweet Chariot"
 hook: "Every word has a gesture. Then sing it again humming, silent, and double time."
-moments: [group-song, closing]
+moments: [any-time, closing]
 style: [sing-along, actions]
 rating: explicit
 length: epic

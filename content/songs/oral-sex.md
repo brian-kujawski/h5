@@ -3,7 +3,7 @@ id: oral-sex
 title: "Oral Sex"
 tune: "Oklahoma!"
 hook: null
-moments: [group-song]
+moments: [any-time]
 style: [sing-along]
 rating: explicit
 length: standard

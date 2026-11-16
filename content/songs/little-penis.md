@@ -3,7 +3,7 @@ id: little-penis
 title: "Little Penis"
 tune: "I'm a Little Teapot"
 hook: null
-moments: [group-song]
+moments: [any-time]
 style: [sing-along, actions]
 rating: explicit
 length: standard

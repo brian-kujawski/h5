@@ -3,7 +3,7 @@ id: father-abraham
 title: "Father Abraham"
 tune: "Father Abraham"
 hook: "Actions pile up until the last verse moons the pack."
-moments: [group-song]
+moments: [any-time]
 style: [call-and-response, actions]
 rating: cheeky
 length: standard

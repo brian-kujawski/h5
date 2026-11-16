@@ -31,7 +31,7 @@ describe('clean mode', () => {
     assert.equal(isVisible(explicit, false), true);
   });
   it('applies to moment lists and search', () => {
-    for (const s of songsForMoment('group-song', true)) assert.notEqual(s.rating, 'explicit');
+    for (const s of songsForMoment('any-time', true)) assert.notEqual(s.rating, 'explicit');
     for (const s of searchSongs('', true)) assert.notEqual(s.rating, 'explicit');
   });
 });

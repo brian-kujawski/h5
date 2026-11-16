@@ -3,7 +3,7 @@ id: this-is-hashing
 title: "This Is Hashing"
 tune: "Happy Xmas (War Is Over)"
 hook: "A holiday-season favourite."
-moments: [group-song, virgin]
+moments: [any-time, virgin]
 style: [sing-along]
 rating: cheeky
 length: standard

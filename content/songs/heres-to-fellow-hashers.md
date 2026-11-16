@@ -3,7 +3,7 @@ id: heres-to-fellow-hashers
 title: "Here's to Fellow Hashers"
 tune: null
 hook: "Opens the DeMon ending circle. Everybody chug-a-lugs."
-moments: [opening, group-song]
+moments: [any-time]
 style: [sing-along]
 rating: explicit
 length: quick

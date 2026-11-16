@@ -3,7 +3,7 @@ id: three-blind-jelly-fishes
 title: "Three Blind Jelly Fishes"
 tune: "Three Blind Mice"
 hook: "Counts down, then one climbs back. Repeats forever."
-moments: [group-song]
+moments: [any-time]
 style: [sing-along, actions]
 rating: clean
 length: standard

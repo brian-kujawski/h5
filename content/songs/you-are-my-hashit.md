@@ -3,7 +3,7 @@ id: you-are-my-hashit
 title: "You Are My Hashit"
 tune: "You Are My Sunshine"
 hook: "Everyone knows the tune."
-moments: [group-song]
+moments: [any-time]
 style: [sing-along]
 rating: clean
 length: standard

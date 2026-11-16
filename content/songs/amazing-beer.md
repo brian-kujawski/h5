@@ -3,7 +3,7 @@ id: amazing-beer
 title: "Amazing Beer"
 tune: "Amazing Grace"
 hook: "A slow hymn to the beer check."
-moments: [hares, group-song]
+moments: [hares, any-time]
 style: [sing-along]
 rating: clean
 length: standard

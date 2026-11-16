@@ -3,7 +3,7 @@ id: dough-ray-me
 title: "Dough, Ray, Me"
 tune: "Do-Re-Mi"
 hook: "Every note is about beer."
-moments: [any-down-down, group-song]
+moments: [any-down-down, any-time]
 style: [sing-along]
 rating: clean
 length: epic

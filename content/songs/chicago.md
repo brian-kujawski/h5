@@ -3,7 +3,7 @@ id: chicago
 title: "Chicago"
 tune: "The Bear Went Over the Mountain"
 hook: "Hashers take turns leading verses; a long list of extra pairs."
-moments: [group-song]
+moments: [any-time]
 style: [sing-along, take-turns]
 rating: explicit
 length: epic

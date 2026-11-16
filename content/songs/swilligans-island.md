@@ -3,7 +3,7 @@ id: swilligans-island
 title: "Swilligan's Island"
 tune: "Gilligan's Island theme"
 hook: "The ballad of a muddy, badly laid trail."
-moments: [hares, group-song]
+moments: [hares, any-time]
 style: [sing-along]
 rating: cheeky
 length: epic

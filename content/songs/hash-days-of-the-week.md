@@ -3,7 +3,7 @@ id: hash-days-of-the-week
 title: "Hash Days of the Week"
 tune: null
 hook: "Leader calls, circle echoes, with a motion for every day."
-moments: [group-song]
+moments: [any-time]
 style: [call-and-response, actions]
 rating: explicit
 length: epic

@@ -3,7 +3,7 @@ id: in-heaven-there-is-no-beer
 title: "In Heaven There Is No Beer"
 tune: "In Heaven There Is No Beer (polka)"
 hook: "Short, loud and easy to learn."
-moments: [group-song, closing]
+moments: [any-time, closing]
 style: [sing-along]
 rating: clean
 length: quick

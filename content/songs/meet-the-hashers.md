@@ -3,7 +3,7 @@ id: meet-the-hashers
 title: "Meet the Hashers"
 tune: "Flintstones theme"
 hook: "The kennel anthem. Ends in a long run of down-downs."
-moments: [group-song, any-down-down]
+moments: [any-time, any-down-down]
 style: [sing-along]
 rating: clean
 length: standard

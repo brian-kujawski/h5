@@ -3,7 +3,7 @@ id: hash-pledge
 title: "Hash Pledge of Allegiance"
 tune: null
 hook: "Recited, hand on heart."
-moments: [opening]
+moments: [any-time]
 style: [spoken]
 rating: clean
 length: standard

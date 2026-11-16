@@ -3,7 +3,7 @@ id: alouette-male
 title: "Alouette (male volunteer)"
 tune: "Alouette"
 hook: "Needs a volunteer in the middle."
-moments: [group-song]
+moments: [any-time]
 style: [call-and-response, sing-along]
 rating: explicit
 length: epic

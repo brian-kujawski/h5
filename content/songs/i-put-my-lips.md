@@ -3,7 +3,7 @@ id: i-put-my-lips
 title: "I Put My Lips"
 tune: "When Johnny Comes Marching Home"
 hook: null
-moments: [group-song]
+moments: [any-time]
 style: [sing-along]
 rating: explicit
 length: epic

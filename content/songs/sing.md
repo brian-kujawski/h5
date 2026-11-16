@@ -3,7 +3,7 @@ id: sing
 title: "Sing"
 tune: "Sing, Sing a Song"
 hook: "Gets the whole circle singing."
-moments: [group-song]
+moments: [any-time]
 style: [sing-along]
 rating: cheeky
 length: standard

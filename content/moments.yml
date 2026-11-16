@@ -56,7 +56,7 @@
   blurb: A year older, a trail dumber
   icon: Cake
   group: circle
-  includes: [anniversary]
+  includes: [analversary]
 
 - id: returner
   name: Backsliders

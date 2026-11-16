@@ -3,7 +3,7 @@ id: yogi-bear
 title: "Yogi Bear Song"
 tune: "Camptown Races"
 hook: "Hashers take turns leading verses."
-moments: [group-song]
+moments: [any-time]
 style: [sing-along, take-turns]
 rating: explicit
 length: epic

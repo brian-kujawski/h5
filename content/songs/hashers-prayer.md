@@ -3,7 +3,7 @@ id: hashers-prayer
 title: "Hasher's Prayer"
 tune: null
 hook: null
-moments: [opening]
+moments: [any-time]
 style: [spoken]
 rating: cheeky
 length: standard

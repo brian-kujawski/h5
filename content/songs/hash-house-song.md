@@ -3,7 +3,7 @@ id: hash-house-song
 title: "Hash House Song"
 tune: "The Addams Family theme"
 hook: "Finger snaps included."
-moments: [group-song]
+moments: [any-time]
 style: [sing-along, actions]
 rating: clean
 length: standard

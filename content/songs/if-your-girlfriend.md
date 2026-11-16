@@ -3,7 +3,7 @@ id: if-your-girlfriend
 title: "If Your Girlfriend Tastes Like Shit"
 tune: "If You're Happy and You Know It"
 hook: null
-moments: [group-song]
+moments: [any-time]
 style: [sing-along]
 rating: explicit
 length: quick
