@@ -19,6 +19,10 @@ export type Settings = {
   /** Multiplies lyric size on top of the system text size. */
   lyricScale: number;
   saved: string[];
+  /** RA mode: favourite song per ceremony step, keyed by step id. */
+  raFaves: Record<string, string>;
+  /** RA mode: the step the RA was last on, so the RA tab can resume there. */
+  raLastStep: string | null;
 };
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -27,6 +31,8 @@ export const DEFAULT_SETTINGS: Settings = {
   theme: 'system',
   lyricScale: 1,
   saved: [],
+  raFaves: {},
+  raLastStep: null,
 };
 
 const STORAGE_KEY = 'h5.settings.v1';
