@@ -1,0 +1,165 @@
+# Moment taxonomy: the occasions shown as tiles on the Circle tab.
+#
+# PROPOSED, NOT YET AGREED. Agreeing this list is a Phase 0 gate.
+# The main tiles follow the DeMon H3 ending-circle running order, which is
+# when the RA asks the pack for a song. Every `moments:` value in
+# content/songs/*.md must be an id below, or `npm run content` fails.
+#
+# Fields:
+#   id        stable id used in song files (kebab-case, never rename once shipped)
+#   name      display name, sentence case
+#   blurb     one line shown under the tile
+#   icon      Phosphor icon name (https://phosphoricons.com)
+#   group     circle = the main tiles, in running order
+#             extra  = shown under "More moments"
+#   includes  optional: other moment ids whose songs also show on this tile,
+#             listed after the songs tagged with this moment directly
+#
+# Order in this file is the display order.
+
+# --- Ending circle, in DeMon running order ---
+
+- id: hares
+  name: Hares
+  blurb: What's your excuse?
+  icon: Rabbit
+  group: circle
+  includes: [trail-complaint]
+
+- id: virgin
+  name: Virgins
+  blurb: You must be new here
+  icon: Plant
+  group: circle
+
+- id: visitor
+  name: Visitors
+  blurb: Hashers from other kennels
+  icon: Backpack
+  group: circle
+
+- id: fastest-runner
+  name: FRB
+  blurb: Front-running bastards
+  icon: Lightning
+  group: circle
+
+- id: accusations
+  name: Accusations
+  blurb: Accolades, tales from trail?
+  icon: Siren
+  group: circle
+  includes: [trail-mishap, etiquette-breach, too-drunk, new-shoes, last-in, autohash]
+
+- id: birthday
+  name: Analversaries
+  blurb: A year older, a trail dumber
+  icon: Cake
+  group: circle
+  includes: [analversary]
+
+- id: returner
+  name: Backsliders
+  blurb: Where were you??
+  icon: ArrowUUpLeft
+  group: circle
+
+- id: closing
+  name: May the Hash Go In Peace
+  blurb: We'll get it right next time
+  icon: MoonStars
+  group: circle
+
+# --- Any time ---
+
+- id: any-down-down
+  name: Down-Down
+  blurb: Idk just drink
+  icon: BeerStein
+  group: circle
+
+# --- Extras: finer-grained tags, mostly rolled into the tiles above ---
+
+- id: trail-mishap
+  name: Trail Mishap
+  blurb: Blood on trail, got lost, dumb shit
+  icon: Warning
+  group: extra
+
+- id: etiquette-breach
+  name: Hash Crimes
+  blurb: Whistles, nerd names, other sins
+  icon: Siren
+  group: extra
+
+- id: new-shoes
+  name: New Shoes
+  blurb: But how do they taste
+  icon: Sneaker
+  group: extra
+
+- id: last-in
+  name: DFL
+  blurb: Took the scenic route?
+  icon: Hourglass
+  group: extra
+
+- id: trail-complaint
+  name: Shitty Trail
+  blurb: The trail was a crime
+  icon: ThumbsDown
+  group: extra
+
+- id: analversary
+  name: Analversary
+  blurb: Cum here often?
+  icon: Confetti
+  group: extra
+
+- id: naming
+  name: Naming
+  blurb: A hasher gets their name
+  icon: Tag
+  group: extra
+
+- id: roast
+  name: Roasts
+  blurb: Fuck you in particular
+  icon: Fire
+  group: extra
+
+- id: too-drunk
+  name: Too Drunk
+  blurb: For the hasher who peaked early
+  icon: SmileyXEyes
+  group: extra
+
+- id: stalling
+  name: Stalling
+  blurb: Why are we waiting?
+  icon: Clock
+  group: extra
+
+- id: farewell
+  name: Departing Hasher
+  blurb: Send them off properly
+  icon: HandWaving
+  group: extra
+
+- id: life-event
+  name: Life Events
+  blurb: Weddings, divorces, babies
+  icon: Heart
+  group: extra
+
+- id: autohash
+  name: Autohashing
+  blurb: Never even saw a mark
+  icon: Car
+  group: extra
+
+- id: any-time
+  name: Any Time
+  blurb: And there was much rejoicing
+  icon: MusicNotes
+  group: extra
