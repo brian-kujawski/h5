@@ -14,7 +14,7 @@ ends_with_down_down: false
 review_flags: []
 origin: DeMon H3 RA cheat sheet
 source_title: "ENDING CIRCLE"
-notes: "Same tune and shape as the Toledo Down-Down Song, without the slur. The cheat sheet writes f*cked and f*cker with asterisks."
+notes: "The cheat sheet writes f*cked and f*cker with asterisks."
 recordings: []
 metadata_status: provisional
 ---

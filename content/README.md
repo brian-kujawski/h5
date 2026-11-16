@@ -12,7 +12,7 @@ That validates every file and rebuilds `src/content/generated/songbook.json`, wh
 
 ## The seed songbook
 
-82 songs imported from the Motown Ann Arbor H3 Hymnal PDF (rev. 20 April 2009), plus "Here's to Fellow Hashers" from the DeMon H3 RA cheat sheet. The default bundled list is the songs sung at MoA2H3 and DeMonH3, and it will change over time.
+79 songs from the Motown Ann Arbor H3 Hymnal PDF (rev. 20 April 2009), plus "Here's to Fellow Hashers" from the DeMon H3 RA cheat sheet. The default bundled list is the songs sung at MoA2H3 and DeMonH3, and it will change over time.
 
 **All metadata is provisional.** Moments, ratings, length, difficulty and hooks are rough placeholders to show the format. Real values come from hashers. Every file says `metadata_status: provisional` until someone reviews it.
 
@@ -61,18 +61,15 @@ Lyric conventions:
 
 ## Things to review
 
-These came up during the import. Nothing has been removed or reworded; that call belongs to the kennel.
+These came up during the import. Toledo Down-Down, Yogi Bear and Twenty Toes were removed at the kennel's request and may come back later; nothing else has been removed or reworded.
 
-- **Toledo Down-Down Song** contains an anti-gay slur (`review_flags: [slur]`).
-- **Yogi Bear Song** has a racial-reference verse and an HIV song-ender.
-- **Twenty Toes** is only two lines and may be incomplete.
 - **Swing Low** was rebuilt from a gesture grid; check the word-to-gesture pairing.
 - Two songs were both titled "Alternate Birthday Song"; they're now "May You Live 100 Years" and "Here's to (Name) Birthday Song".
-- 23 songs have no hook yet (`hook: null`); lists show the first line instead.
+- 21 songs have no hook yet (`hook: null`); lists show the first line instead.
 - Lyrics are otherwise kept as written (including original spellings), with page headers and footers removed.
 
 ## Ideas the songbook surfaced for later phases
 
-- **Growing lists** (Alouette body parts, Chicago and Yogi Bear extra verses) want a "more verses" list rather than full verses.
+- **Growing lists** (Alouette body parts, Chicago extra verses) want a "more verses" list rather than full verses.
 - **Pronoun swaps and fill-ins** (he/she/they, (name), (age)) suggest a "who's in the middle?" toggle on the song screen.
 - **Kennel-specific lines** ("Motown – Ann Arbor") should become a kennel-name placeholder, and later part of Custom Hymnals.
