@@ -1,4 +1,5 @@
 import { router } from 'expo-router';
+import { MagnifyingGlass } from 'phosphor-react-native';
 import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 
@@ -33,13 +34,21 @@ function MomentTile({ moment, count }: { moment: Moment; count: number }) {
 
 /** Circle tab (home): pick a moment, get a short list of songs that fit. */
 export default function CircleScreen() {
-  const { settings } = useSettings();
+  const { settings, colors } = useSettings();
   const [showExtras, setShowExtras] = useState(false);
   const main = momentsWithCounts('circle', settings.cleanMode);
   const extras = momentsWithCounts('extra', settings.cleanMode);
 
   return (
     <TabScreen title="On on! Pick a moment" subtitle="Who's in the middle?">
+      <PressableCard
+        accessibilityLabel="Search songs"
+        accessibilityHint="Opens the Songs tab with the keyboard up"
+        onPress={() => router.navigate({ pathname: '/songs', params: { focus: String(Date.now()) } })}
+        style={styles.search}>
+        <MagnifyingGlass size={22} color={colors.textSecondary} />
+        <Text color="textSecondary">Know the words? Search them</Text>
+      </PressableCard>
       <View style={styles.grid}>
         {main.map(({ moment, count }) => (
           <MomentTile key={moment.id} moment={moment} count={count} />
@@ -64,5 +73,6 @@ export default function CircleScreen() {
 const styles = StyleSheet.create({
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: space.sm + 4 },
   tile: { flexBasis: '47%', flexGrow: 1, padding: space.md, gap: space.xs, minHeight: 148 },
+  search: { flexDirection: 'row', alignItems: 'center', gap: space.sm, paddingHorizontal: space.md },
   more: { alignItems: 'center', justifyContent: 'center' },
 });

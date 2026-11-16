@@ -10,6 +10,8 @@ type Props = {
   sections: Section[];
   /** Circle mode: maximum type, nothing else on screen. */
   circle?: boolean;
+  /** Reports where each section starts (relative to the lyrics block), so circle mode can step a verse at a time. */
+  onSectionLayout?: (index: number, y: number) => void;
 };
 
 /**
@@ -17,7 +19,7 @@ type Props = {
  * chorus bold on a tinted band, the caller's part in the accent colour,
  * gestures in smaller secondary text, verse numbers in the margin.
  */
-export function Lyrics({ sections, circle = false }: Props) {
+export function Lyrics({ sections, circle = false, onSectionLayout }: Props) {
   const { colors, settings } = useSettings();
   const base = circle ? typeScale.lyricCircle : typeScale.lyric;
   const scale = settings.lyricScale;
@@ -53,7 +55,10 @@ export function Lyrics({ sections, circle = false }: Props) {
       {sections.map((section, si) => {
         if (section.type === 'note') {
           return (
-            <View key={si} style={[styles.note, { borderColor: colors.divider }]}>
+            <View
+              key={si}
+              onLayout={(e) => onSectionLayout?.(si, e.nativeEvent.layout.y)}
+              style={[styles.note, { borderColor: colors.divider }]}>
               {section.lines.map((line, li) => (
                 <Text key={li} variant="secondary" color="textSecondary">
                   {line.segments.map((s) => s.text).join(' ')}
@@ -66,6 +71,7 @@ export function Lyrics({ sections, circle = false }: Props) {
         return (
           <View
             key={si}
+            onLayout={(e) => onSectionLayout?.(si, e.nativeEvent.layout.y)}
             style={[styles.section, chorus && { backgroundColor: colors.surfaceTint, ...styles.chorus }]}
             accessibilityLabel={chorus ? 'Chorus' : `Verse ${section.number}`}>
             <View style={styles.margin}>

@@ -31,7 +31,6 @@ export const DEFAULT_SETTINGS: Settings = {
 
 const STORAGE_KEY = 'h5.settings.v1';
 
-export const LYRIC_SCALES = [0.85, 1, 1.2, 1.4] as const;
 
 function load(): Settings {
   const raw = readItem(STORAGE_KEY);
