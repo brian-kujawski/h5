@@ -19,12 +19,6 @@
 
 # --- Ending circle, in DeMon running order ---
 
-- id: opening
-  name: Circle up
-  blurb: Start the ending circle
-  icon: MegaphoneSimple
-  group: circle
-
 - id: hares
   name: Hares
   blurb: What's your excuse?
@@ -34,7 +28,7 @@
 
 - id: virgin
   name: Virgins
-  blurb: Teach them the art of a down-down
+  blurb: You must be new here
   icon: Plant
   group: circle
 
@@ -46,85 +40,79 @@
 
 - id: fastest-runner
   name: FRB
-  blurb: Front-running bastard, and next hare
+  blurb: Front-running bastards
   icon: Lightning
   group: circle
 
 - id: accusations
   name: Accusations
-  blurb: Accolades and tales from trail
+  blurb: Accolades, tales from trail?
   icon: Siren
   group: circle
   includes: [trail-mishap, etiquette-breach, too-drunk, new-shoes, last-in, autohash]
 
 - id: birthday
-  name: Hashy birthdays
-  blurb: Birthdays and anniversaries
+  name: Analversaries
+  blurb: A year older, a trail dumber
   icon: Cake
   group: circle
   includes: [anniversary]
 
 - id: returner
   name: Backsliders
-  blurb: Missed two or more hashes
+  blurb: Where were you??
   icon: ArrowUUpLeft
   group: circle
 
 - id: closing
-  name: May the hash go in peace
-  blurb: Last song of the night
+  name: May the Hash Go In Peace
+  blurb: We'll get it right next time
   icon: MoonStars
   group: circle
 
 # --- Any time ---
 
 - id: any-down-down
-  name: Any down-down
-  blurb: Works for anyone in the middle
+  name: Down-Down
+  blurb: Idk just drink
   icon: BeerStein
-  group: circle
-
-- id: group-song
-  name: Whole circle
-  blurb: Everyone sings
-  icon: UsersThree
   group: circle
 
 # --- Extras: finer-grained tags, mostly rolled into the tiles above ---
 
 - id: trail-mishap
-  name: Trail mishap
-  blurb: Fell, got lost, did something dumb
+  name: Trail Mishap
+  blurb: Blood on trail, got lost, dumb shit
   icon: Warning
   group: extra
 
 - id: etiquette-breach
-  name: Hash crimes
-  blurb: Whistles, real names and other sins
+  name: Hash Crimes
+  blurb: Whistles, nerd names, other sins
   icon: Siren
   group: extra
 
 - id: new-shoes
-  name: New shoes
-  blurb: Fresh kicks get christened
+  name: New Shoes
+  blurb: But how do they taste
   icon: Sneaker
   group: extra
 
 - id: last-in
-  name: Last in
-  blurb: Took the scenic route
+  name: DFL
+  blurb: Took the scenic route?
   icon: Hourglass
   group: extra
 
 - id: trail-complaint
-  name: Shitty trail
+  name: Shitty Trail
   blurb: The trail was a crime
   icon: ThumbsDown
   group: extra
 
-- id: anniversary
-  name: Run milestone
-  blurb: 69th, 100th, 666th trail
+- id: analversary
+  name: Analversary
+  blurb: Cum here often?
   icon: Confetti
   group: extra
 
@@ -136,42 +124,42 @@
 
 - id: roast
   name: Roasts
-  blurb: Songs aimed at whoever's in the middle
+  blurb: Fuck you in particular
   icon: Fire
   group: extra
 
 - id: too-drunk
-  name: Too drunk
+  name: Too Drunk
   blurb: For the hasher who peaked early
   icon: SmileyXEyes
   group: extra
 
 - id: stalling
   name: Stalling
-  blurb: Fill time while the beer arrives
+  blurb: Why are we waiting?
   icon: Clock
   group: extra
 
 - id: farewell
-  name: Departing hasher
+  name: Departing Hasher
   blurb: Send them off properly
   icon: HandWaving
   group: extra
 
 - id: life-event
-  name: Life events
+  name: Life Events
   blurb: Weddings, divorces, babies
   icon: Heart
   group: extra
 
 - id: autohash
-  name: Car trouble
-  blurb: Drove part of the trail
+  name: Autohashing
+  blurb: Never even saw a mark
   icon: Car
   group: extra
 
 - id: any-time
-  name: Any time
-  blurb: Good whenever
+  name: Any Time
+  blurb: And there was much rejoicing
   icon: MusicNotes
   group: extra
